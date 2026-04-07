@@ -1,29 +1,12 @@
 {
   "meta": {
     "data_cutoff_date": "2026-03-30",
-    "page_generated_at": "2026-04-07T08:00:00+08:00",
+    "page_generated_at": "2026-04-07T09:05:58.900Z",
     "version": "2026.04.07",
     "update_batch_id": "batch-20260407",
-    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据"
+    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据",
+    "model_count": 11
   },
-
-  "sources": [
-    {
-      "source_id": "src-superclue-202603",
-      "name": "SuperCLUE 中文大模型测评基准",
-      "url": "https://www.superclueai.com/generalpage",
-      "data_date": "2026-03-30",
-      "description": "SuperCLUE 2026年3月通用榜，覆盖数学推理、代码生成、科学推理、智能体、幻觉控制、指令遵循六大维度"
-    },
-    {
-      "source_id": "src-benchlm-202604",
-      "name": "BenchLM.ai 全球大模型综合排行榜",
-      "url": "https://benchlm.ai/best/overall",
-      "data_date": "2026-04-07",
-      "description": "BenchLM.ai 综合评分，覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均"
-    }
-  ],
-
   "models": [
     {
       "model_id": "doubao-seed",
@@ -65,21 +48,39 @@
         "price_effective_date": null,
         "price_source_url": "https://www.volcengine.com/product/doubao"
       },
-      "tags": ["中文理解", "智能体", "综合能力", "闭源"],
-      "scenario_recommendations": ["中文内容生成", "智能体任务规划", "综合问答"],
+      "tags": [
+        "中文理解",
+        "智能体",
+        "综合能力",
+        "闭源"
+      ],
+      "scenario_recommendations": [
+        "中文内容生成",
+        "智能体任务规划",
+        "综合问答"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "high",
-        "best_for": ["chinese_nlp", "agent", "instruction_following"],
+        "best_for": [
+          "chinese_nlp",
+          "agent",
+          "instruction_following"
+        ],
         "avoid_for": [],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#3b82f6",
@@ -100,12 +101,12 @@
       "latest_version_label": "2026-03",
       "capabilities": {
         "math_reasoning": 81.51,
-        "code_generation": 65.50,
+        "code_generation": 65.5,
         "science_reasoning": 68.29,
         "agent": 78.44,
         "hallucination_control": 77.61,
         "instruction_following": 16.22,
-        "superclue_total": 64.60,
+        "superclue_total": 64.6,
         "benchlm_score": 76,
         "arena_elo": null
       },
@@ -126,21 +127,41 @@
         "price_effective_date": null,
         "price_source_url": "https://platform.moonshot.cn/docs/pricing"
       },
-      "tags": ["编程之王", "数学推理", "智能体", "开源可部署"],
-      "scenario_recommendations": ["代码生成", "数学推理", "AI智能体", "开源自部署"],
+      "tags": [
+        "编程之王",
+        "数学推理",
+        "智能体",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "代码生成",
+        "数学推理",
+        "AI智能体",
+        "开源自部署"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "high",
-        "best_for": ["coding", "math", "agent", "open_source"],
+        "best_for": [
+          "coding",
+          "math",
+          "agent",
+          "open_source"
+        ],
         "avoid_for": [],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#8b5cf6",
@@ -187,21 +208,41 @@
         "price_effective_date": null,
         "price_source_url": "https://bailian.console.aliyun.com/"
       },
-      "tags": ["幻觉控制", "均衡全能", "开源生态", "开源可部署"],
-      "scenario_recommendations": ["幻觉敏感场景", "均衡通用", "开源自部署", "数学推理"],
+      "tags": [
+        "幻觉控制",
+        "均衡全能",
+        "开源生态",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "幻觉敏感场景",
+        "均衡通用",
+        "开源自部署",
+        "数学推理"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "high",
-        "best_for": ["hallucination_control", "math", "open_source", "balanced"],
+        "best_for": [
+          "hallucination_control",
+          "math",
+          "open_source",
+          "balanced"
+        ],
         "avoid_for": [],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#f97316",
@@ -223,7 +264,7 @@
       "capabilities": {
         "math_reasoning": 73.95,
         "code_generation": 58.32,
-        "science_reasoning": 75.00,
+        "science_reasoning": 75,
         "agent": 66.64,
         "hallucination_control": 86.85,
         "instruction_following": 24.86,
@@ -248,21 +289,41 @@
         "price_effective_date": null,
         "price_source_url": "https://open.bigmodel.cn/pricing"
       },
-      "tags": ["幻觉控制", "智能体", "全能王", "开源可部署"],
-      "scenario_recommendations": ["幻觉敏感场景", "AI智能体", "开源自部署", "数学推理"],
+      "tags": [
+        "幻觉控制",
+        "智能体",
+        "全能王",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "幻觉敏感场景",
+        "AI智能体",
+        "开源自部署",
+        "数学推理"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "high",
-        "best_for": ["hallucination_control", "agent", "open_source", "math"],
+        "best_for": [
+          "hallucination_control",
+          "agent",
+          "open_source",
+          "math"
+        ],
         "avoid_for": [],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#06b6d4",
@@ -294,8 +355,8 @@
       },
       "pricing": {
         "has_api": true,
-        "input_token_price": 2.0,
-        "output_token_price": 8.0,
+        "input_token_price": 2,
+        "output_token_price": 8,
         "cache_input_price": 0.5,
         "currency": "CNY",
         "pricing_unit": "per_1M_tokens",
@@ -309,21 +370,44 @@
         "price_effective_date": "2025-01-20",
         "price_source_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
       },
-      "tags": ["开源先驱", "均衡发展", "生态广泛", "开源可部署", "价格透明"],
-      "scenario_recommendations": ["代码生成", "开源自部署", "均衡通用", "成本敏感场景"],
+      "tags": [
+        "开源先驱",
+        "均衡发展",
+        "生态广泛",
+        "开源可部署",
+        "价格透明"
+      ],
+      "scenario_recommendations": [
+        "代码生成",
+        "开源自部署",
+        "均衡通用",
+        "成本敏感场景"
+      ],
       "routing_profile": {
         "cost_level": "low",
         "speed_level": "unknown",
         "quality_level": "medium_high",
-        "best_for": ["coding", "open_source", "cost_sensitive", "instruction_following"],
+        "best_for": [
+          "coding",
+          "open_source",
+          "cost_sensitive",
+          "instruction_following"
+        ],
         "avoid_for": [],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
-        "pricing": ["src-benchlm-202604"],
-        "basic_info": ["src-superclue-202603"]
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
+        "pricing": [
+          "src-benchlm-202604"
+        ],
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#10b981",
@@ -347,7 +431,7 @@
         "code_generation": 59.61,
         "science_reasoning": 74.39,
         "agent": 55.97,
-        "hallucination_control": 73.80,
+        "hallucination_control": 73.8,
         "instruction_following": 16.22,
         "superclue_total": 60.67,
         "benchlm_score": 70,
@@ -370,21 +454,38 @@
         "price_effective_date": null,
         "price_source_url": null
       },
-      "tags": ["数学强劲", "长上下文", "效率之星"],
-      "scenario_recommendations": ["数学推理", "长文档处理"],
+      "tags": [
+        "数学强劲",
+        "长上下文",
+        "效率之星"
+      ],
+      "scenario_recommendations": [
+        "数学推理",
+        "长文档处理"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "medium_high",
-        "best_for": ["math", "long_context"],
-        "avoid_for": ["production_api"],
+        "best_for": [
+          "math",
+          "long_context"
+        ],
+        "avoid_for": [
+          "production_api"
+        ],
         "stability_level": "unknown",
         "recommended_for_production": false
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#f59e0b",
@@ -431,21 +532,38 @@
         "price_effective_date": null,
         "price_source_url": "https://cloud.tencent.com/product/hunyuan"
       },
-      "tags": ["均衡稳健", "科学推理", "企业级"],
-      "scenario_recommendations": ["企业级部署", "科学推理", "均衡通用"],
+      "tags": [
+        "均衡稳健",
+        "科学推理",
+        "企业级"
+      ],
+      "scenario_recommendations": [
+        "企业级部署",
+        "科学推理",
+        "均衡通用"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "medium",
-        "best_for": ["enterprise", "science_reasoning", "balanced"],
+        "best_for": [
+          "enterprise",
+          "science_reasoning",
+          "balanced"
+        ],
         "avoid_for": [],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#0ea5e9",
@@ -492,21 +610,39 @@
         "price_effective_date": null,
         "price_source_url": "https://github.com/meituan/LongCat"
       },
-      "tags": ["智能体", "数学推理", "开源可部署"],
-      "scenario_recommendations": ["智能体任务规划", "数学推理", "开源自部署"],
+      "tags": [
+        "智能体",
+        "数学推理",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "智能体任务规划",
+        "数学推理",
+        "开源自部署"
+      ],
       "routing_profile": {
         "cost_level": "free",
         "speed_level": "unknown",
         "quality_level": "medium",
-        "best_for": ["agent", "math", "open_source", "cost_sensitive"],
+        "best_for": [
+          "agent",
+          "math",
+          "open_source",
+          "cost_sensitive"
+        ],
         "avoid_for": [],
         "stability_level": "medium",
         "recommended_for_production": false
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#f59e0b",
@@ -553,21 +689,41 @@
         "price_effective_date": null,
         "price_source_url": "https://platform.stepfun.com/"
       },
-      "tags": ["数学推理", "编程新秀", "高性价比", "开源可部署"],
-      "scenario_recommendations": ["数学推理", "代码生成", "开源自部署", "成本敏感场景"],
+      "tags": [
+        "数学推理",
+        "编程新秀",
+        "高性价比",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "数学推理",
+        "代码生成",
+        "开源自部署",
+        "成本敏感场景"
+      ],
       "routing_profile": {
         "cost_level": "low",
         "speed_level": "fast",
         "quality_level": "medium",
-        "best_for": ["math", "coding", "open_source", "cost_sensitive"],
+        "best_for": [
+          "math",
+          "coding",
+          "open_source",
+          "cost_sensitive"
+        ],
         "avoid_for": [],
         "stability_level": "medium",
         "recommended_for_production": false
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#ec4899",
@@ -592,7 +748,7 @@
         "science_reasoning": 64.63,
         "agent": 59.68,
         "hallucination_control": 55.61,
-        "instruction_following": 17.30,
+        "instruction_following": 17.3,
         "superclue_total": 55.68,
         "benchlm_score": 57,
         "arena_elo": null
@@ -614,21 +770,37 @@
         "price_effective_date": null,
         "price_source_url": "https://platform.minimaxi.com/"
       },
-      "tags": ["数学能力", "编程导向", "性价比"],
-      "scenario_recommendations": ["数学推理", "代码生成", "成本敏感场景"],
+      "tags": [
+        "数学能力",
+        "编程导向",
+        "性价比"
+      ],
+      "scenario_recommendations": [
+        "数学推理",
+        "代码生成",
+        "成本敏感场景"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "medium",
-        "best_for": ["math", "coding"],
+        "best_for": [
+          "math",
+          "coding"
+        ],
         "avoid_for": [],
         "stability_level": "medium",
         "recommended_for_production": false
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#a855f7",
@@ -675,21 +847,42 @@
         "price_effective_date": null,
         "price_source_url": "https://www.xfyun.cn/doc/spark/Web.html"
       },
-      "tags": ["科学推理", "数学能力", "中文语音", "企业级"],
-      "scenario_recommendations": ["科学推理", "教育场景", "语音交互", "企业级部署"],
+      "tags": [
+        "科学推理",
+        "数学能力",
+        "中文语音",
+        "企业级"
+      ],
+      "scenario_recommendations": [
+        "科学推理",
+        "教育场景",
+        "语音交互",
+        "企业级部署"
+      ],
       "routing_profile": {
         "cost_level": "unknown",
         "speed_level": "unknown",
         "quality_level": "medium",
-        "best_for": ["science_reasoning", "education", "voice_interaction"],
-        "avoid_for": ["instruction_following"],
+        "best_for": [
+          "science_reasoning",
+          "education",
+          "voice_interaction"
+        ],
+        "avoid_for": [
+          "instruction_following"
+        ],
         "stability_level": "high",
         "recommended_for_production": true
       },
       "source_refs": {
-        "capabilities": ["src-superclue-202603", "src-benchlm-202604"],
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
         "pricing": [],
-        "basic_info": ["src-superclue-202603"]
+        "basic_info": [
+          "src-superclue-202603"
+        ]
       },
       "display": {
         "color": "#ef4444",
@@ -697,31 +890,119 @@
       }
     }
   ],
-
   "benchmarks": {
     "coding": [
-      { "model_id": "kimi-k25", "model_label": "Kimi K2.5", "swebench": 76.8, "swebench_pro": 70.0, "livecodebench": 85.0 },
-      { "model_id": "glm5", "model_label": "GLM-4.7", "swebench": 73.8, "swebench_pro": 51.0, "livecodebench": 84.9 },
-      { "model_id": "mimo-v2", "model_label": "MiMo V2 Flash", "swebench": 73.4, "swebench_pro": 52.0, "livecodebench": 80.6 },
-      { "model_id": "step35", "model_label": "Step 3.5 Flash", "swebench": 74.4, "swebench_pro": 49.0, "livecodebench": 86.4 },
-      { "model_id": "glm5", "model_label": "GLM-5", "swebench": 62.0, "swebench_pro": 67.0, "livecodebench": 58.0 }
+      {
+        "model_id": "kimi-k25",
+        "model_label": "Kimi K2.5",
+        "swebench": 76.8,
+        "swebench_pro": 70,
+        "livecodebench": 85
+      },
+      {
+        "model_id": "glm5",
+        "model_label": "GLM-4.7",
+        "swebench": 73.8,
+        "swebench_pro": 51,
+        "livecodebench": 84.9
+      },
+      {
+        "model_id": "mimo-v2",
+        "model_label": "MiMo V2 Flash",
+        "swebench": 73.4,
+        "swebench_pro": 52,
+        "livecodebench": 80.6
+      },
+      {
+        "model_id": "step35",
+        "model_label": "Step 3.5 Flash",
+        "swebench": 74.4,
+        "swebench_pro": 49,
+        "livecodebench": 86.4
+      },
+      {
+        "model_id": "glm5",
+        "model_label": "GLM-5",
+        "swebench": 62,
+        "swebench_pro": 67,
+        "livecodebench": 58
+      }
     ],
     "math": [
-      { "model_id": "glm5", "model_label": "GLM-5", "aime": 98.0, "hmmt": 95.0, "math500": 92.0 },
-      { "model_id": "kimi-k25", "model_label": "Kimi K2.5", "aime": 96.1, "hmmt": 95.4, "math500": 92.0 },
-      { "model_id": "mimo-v2", "model_label": "MiMo V2 Pro", "aime": 94.1, "hmmt": 76.0, "math500": 90.0 },
-      { "model_id": "qwen35", "model_label": "通义千问 3.5", "aime": 94.0, "hmmt": 90.0, "math500": 93.0 },
-      { "model_id": "deepseek-v32", "model_label": "DeepSeek V3.2", "aime": 88.0, "hmmt": 84.0, "math500": 84.0 }
+      {
+        "model_id": "glm5",
+        "model_label": "GLM-5",
+        "aime": 98,
+        "hmmt": 95,
+        "math500": 92
+      },
+      {
+        "model_id": "kimi-k25",
+        "model_label": "Kimi K2.5",
+        "aime": 96.1,
+        "hmmt": 95.4,
+        "math500": 92
+      },
+      {
+        "model_id": "mimo-v2",
+        "model_label": "MiMo V2 Pro",
+        "aime": 94.1,
+        "hmmt": 76,
+        "math500": 90
+      },
+      {
+        "model_id": "qwen35",
+        "model_label": "通义千问 3.5",
+        "aime": 94,
+        "hmmt": 90,
+        "math500": 93
+      },
+      {
+        "model_id": "deepseek-v32",
+        "model_label": "DeepSeek V3.2",
+        "aime": 88,
+        "hmmt": 84,
+        "math500": 84
+      }
     ],
     "agent": [
-      { "model_id": "glm5", "model_label": "GLM-5", "terminal_bench": 81.0, "browse_comp": 80.0, "osworld": 74.0 },
-      { "model_id": "qwen35", "model_label": "通义千问 3.5", "terminal_bench": 77.0, "browse_comp": 78.0, "osworld": 70.0 },
-      { "model_id": "deepseek-v32", "model_label": "DeepSeek V3.2", "terminal_bench": 71.0, "browse_comp": 70.0, "osworld": 67.0 },
-      { "model_id": "step35", "model_label": "Step 3.5 Flash", "terminal_bench": 62.0, "browse_comp": 66.0, "osworld": 54.0 },
-      { "model_id": "kimi-k25", "model_label": "Kimi K2.5", "terminal_bench": 50.8, "browse_comp": 60.6, "osworld": 63.3 }
+      {
+        "model_id": "glm5",
+        "model_label": "GLM-5",
+        "terminal_bench": 81,
+        "browse_comp": 80,
+        "osworld": 74
+      },
+      {
+        "model_id": "qwen35",
+        "model_label": "通义千问 3.5",
+        "terminal_bench": 77,
+        "browse_comp": 78,
+        "osworld": 70
+      },
+      {
+        "model_id": "deepseek-v32",
+        "model_label": "DeepSeek V3.2",
+        "terminal_bench": 71,
+        "browse_comp": 70,
+        "osworld": 67
+      },
+      {
+        "model_id": "step35",
+        "model_label": "Step 3.5 Flash",
+        "terminal_bench": 62,
+        "browse_comp": 66,
+        "osworld": 54
+      },
+      {
+        "model_id": "kimi-k25",
+        "model_label": "Kimi K2.5",
+        "terminal_bench": 50.8,
+        "browse_comp": 60.6,
+        "osworld": 63.3
+      }
     ]
   },
-
   "reference_models": [
     {
       "model_id": "claude-opus-46",
@@ -745,6 +1026,21 @@
       "benchlm_overall": 82
     }
   ],
-
+  "sources": [
+    {
+      "source_id": "src-superclue-202603",
+      "name": "SuperCLUE 中文大模型测评基准",
+      "url": "https://www.superclueai.com/generalpage",
+      "data_date": "2026-03-30",
+      "description": "SuperCLUE 2026年3月通用榜，覆盖数学推理、代码生成、科学推理、智能体、幻觉控制、指令遵循六大维度"
+    },
+    {
+      "source_id": "src-benchlm-202604",
+      "name": "BenchLM.ai 全球大模型综合排行榜",
+      "url": "https://benchlm.ai/best/overall",
+      "data_date": "2026-04-07",
+      "description": "BenchLM.ai 综合评分，覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均"
+    }
+  ],
   "history_refs": []
 }

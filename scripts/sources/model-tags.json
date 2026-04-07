@@ -1,0 +1,158 @@
+[
+  {
+    "model_id": "doubao-seed",
+    "tags": [
+      "中文理解",
+      "智能体",
+      "综合能力",
+      "闭源"
+    ],
+    "scenario_recommendations": [
+      "中文内容生成",
+      "智能体任务规划",
+      "综合问答"
+    ]
+  },
+  {
+    "model_id": "kimi-k25",
+    "tags": [
+      "编程之王",
+      "数学推理",
+      "智能体",
+      "开源可部署"
+    ],
+    "scenario_recommendations": [
+      "代码生成",
+      "数学推理",
+      "AI智能体",
+      "开源自部署"
+    ]
+  },
+  {
+    "model_id": "qwen35",
+    "tags": [
+      "幻觉控制",
+      "均衡全能",
+      "开源生态",
+      "开源可部署"
+    ],
+    "scenario_recommendations": [
+      "幻觉敏感场景",
+      "均衡通用",
+      "开源自部署",
+      "数学推理"
+    ]
+  },
+  {
+    "model_id": "glm5",
+    "tags": [
+      "幻觉控制",
+      "智能体",
+      "全能王",
+      "开源可部署"
+    ],
+    "scenario_recommendations": [
+      "幻觉敏感场景",
+      "AI智能体",
+      "开源自部署",
+      "数学推理"
+    ]
+  },
+  {
+    "model_id": "deepseek-v32",
+    "tags": [
+      "开源先驱",
+      "均衡发展",
+      "生态广泛",
+      "开源可部署",
+      "价格透明"
+    ],
+    "scenario_recommendations": [
+      "代码生成",
+      "开源自部署",
+      "均衡通用",
+      "成本敏感场景"
+    ]
+  },
+  {
+    "model_id": "mimo-v2",
+    "tags": [
+      "数学强劲",
+      "长上下文",
+      "效率之星"
+    ],
+    "scenario_recommendations": [
+      "数学推理",
+      "长文档处理"
+    ]
+  },
+  {
+    "model_id": "hy20",
+    "tags": [
+      "均衡稳健",
+      "科学推理",
+      "企业级"
+    ],
+    "scenario_recommendations": [
+      "企业级部署",
+      "科学推理",
+      "均衡通用"
+    ]
+  },
+  {
+    "model_id": "longcat",
+    "tags": [
+      "智能体",
+      "数学推理",
+      "开源可部署"
+    ],
+    "scenario_recommendations": [
+      "智能体任务规划",
+      "数学推理",
+      "开源自部署"
+    ]
+  },
+  {
+    "model_id": "step35",
+    "tags": [
+      "数学推理",
+      "编程新秀",
+      "高性价比",
+      "开源可部署"
+    ],
+    "scenario_recommendations": [
+      "数学推理",
+      "代码生成",
+      "开源自部署",
+      "成本敏感场景"
+    ]
+  },
+  {
+    "model_id": "minimax-m27",
+    "tags": [
+      "数学能力",
+      "编程导向",
+      "性价比"
+    ],
+    "scenario_recommendations": [
+      "数学推理",
+      "代码生成",
+      "成本敏感场景"
+    ]
+  },
+  {
+    "model_id": "spark-x2",
+    "tags": [
+      "科学推理",
+      "数学能力",
+      "中文语音",
+      "企业级"
+    ],
+    "scenario_recommendations": [
+      "科学推理",
+      "教育场景",
+      "语音交互",
+      "企业级部署"
+    ]
+  }
+]

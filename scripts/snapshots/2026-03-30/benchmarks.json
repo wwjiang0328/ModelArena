@@ -1,0 +1,98 @@
+{
+  "coding": [
+    {
+      "model": "Kimi K2.5",
+      "swebench": 76.8,
+      "swebenchPro": 70,
+      "livecodebench": 85
+    },
+    {
+      "model": "GLM-4.7",
+      "swebench": 73.8,
+      "swebenchPro": 51,
+      "livecodebench": 84.9
+    },
+    {
+      "model": "MiMo V2 Flash",
+      "swebench": 73.4,
+      "swebenchPro": 52,
+      "livecodebench": 80.6
+    },
+    {
+      "model": "Step 3.5 Flash",
+      "swebench": 74.4,
+      "swebenchPro": 49,
+      "livecodebench": 86.4
+    },
+    {
+      "model": "GLM-5",
+      "swebench": 62,
+      "swebenchPro": 67,
+      "livecodebench": 58
+    }
+  ],
+  "math": [
+    {
+      "model": "GLM-5",
+      "aime": 98,
+      "hmmt": 95,
+      "math500": 92
+    },
+    {
+      "model": "Kimi K2.5",
+      "aime": 96.1,
+      "hmmt": 95.4,
+      "math500": 92
+    },
+    {
+      "model": "MiMo V2 Pro",
+      "aime": 94.1,
+      "hmmt": 76,
+      "math500": 90
+    },
+    {
+      "model": "通义千问 3.5",
+      "aime": 94,
+      "hmmt": 90,
+      "math500": 93
+    },
+    {
+      "model": "DeepSeek V3.2",
+      "aime": 88,
+      "hmmt": 84,
+      "math500": 84
+    }
+  ],
+  "agent": [
+    {
+      "model": "GLM-5",
+      "terminalBench": 81,
+      "browseComp": 80,
+      "osworld": 74
+    },
+    {
+      "model": "通义千问 3.5",
+      "terminalBench": 77,
+      "browseComp": 78,
+      "osworld": 70
+    },
+    {
+      "model": "DeepSeek V3.2",
+      "terminalBench": 71,
+      "browseComp": 70,
+      "osworld": 67
+    },
+    {
+      "model": "Step 3.5 Flash",
+      "terminalBench": 62,
+      "browseComp": 66,
+      "osworld": 54
+    },
+    {
+      "model": "Kimi K2.5",
+      "terminalBench": 50.8,
+      "browseComp": 60.6,
+      "osworld": 63.3
+    }
+  ]
+}

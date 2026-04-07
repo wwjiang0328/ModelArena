@@ -1,0 +1,186 @@
+[
+  {
+    "model_id": "doubao-seed",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "high",
+      "best_for": [
+        "chinese_nlp",
+        "agent",
+        "instruction_following"
+      ],
+      "avoid_for": [],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
+    "model_id": "kimi-k25",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "high",
+      "best_for": [
+        "coding",
+        "math",
+        "agent",
+        "open_source"
+      ],
+      "avoid_for": [],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
+    "model_id": "qwen35",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "high",
+      "best_for": [
+        "hallucination_control",
+        "math",
+        "open_source",
+        "balanced"
+      ],
+      "avoid_for": [],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
+    "model_id": "glm5",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "high",
+      "best_for": [
+        "hallucination_control",
+        "agent",
+        "open_source",
+        "math"
+      ],
+      "avoid_for": [],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
+    "model_id": "deepseek-v32",
+    "routing_profile": {
+      "cost_level": "low",
+      "speed_level": "unknown",
+      "quality_level": "medium_high",
+      "best_for": [
+        "coding",
+        "open_source",
+        "cost_sensitive",
+        "instruction_following"
+      ],
+      "avoid_for": [],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
+    "model_id": "mimo-v2",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "medium_high",
+      "best_for": [
+        "math",
+        "long_context"
+      ],
+      "avoid_for": [
+        "production_api"
+      ],
+      "stability_level": "unknown",
+      "recommended_for_production": false
+    }
+  },
+  {
+    "model_id": "hy20",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "medium",
+      "best_for": [
+        "enterprise",
+        "science_reasoning",
+        "balanced"
+      ],
+      "avoid_for": [],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
+    "model_id": "longcat",
+    "routing_profile": {
+      "cost_level": "free",
+      "speed_level": "unknown",
+      "quality_level": "medium",
+      "best_for": [
+        "agent",
+        "math",
+        "open_source",
+        "cost_sensitive"
+      ],
+      "avoid_for": [],
+      "stability_level": "medium",
+      "recommended_for_production": false
+    }
+  },
+  {
+    "model_id": "step35",
+    "routing_profile": {
+      "cost_level": "low",
+      "speed_level": "fast",
+      "quality_level": "medium",
+      "best_for": [
+        "math",
+        "coding",
+        "open_source",
+        "cost_sensitive"
+      ],
+      "avoid_for": [],
+      "stability_level": "medium",
+      "recommended_for_production": false
+    }
+  },
+  {
+    "model_id": "minimax-m27",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "medium",
+      "best_for": [
+        "math",
+        "coding"
+      ],
+      "avoid_for": [],
+      "stability_level": "medium",
+      "recommended_for_production": false
+    }
+  },
+  {
+    "model_id": "spark-x2",
+    "routing_profile": {
+      "cost_level": "unknown",
+      "speed_level": "unknown",
+      "quality_level": "medium",
+      "best_for": [
+        "science_reasoning",
+        "education",
+        "voice_interaction"
+      ],
+      "avoid_for": [
+        "instruction_following"
+      ],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  }
+]

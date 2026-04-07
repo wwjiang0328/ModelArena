@@ -1,0 +1,268 @@
+[
+  {
+    "model_id": "doubao-seed",
+    "capabilities": {
+      "math_reasoning": 84.87,
+      "code_generation": 63.93,
+      "science_reasoning": 80.49,
+      "agent": 81.04,
+      "hallucination_control": 79.41,
+      "instruction_following": 39.46,
+      "superclue_total": 71.53,
+      "benchlm_score": 65,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "kimi-k25",
+    "capabilities": {
+      "math_reasoning": 81.51,
+      "code_generation": 65.5,
+      "science_reasoning": 68.29,
+      "agent": 78.44,
+      "hallucination_control": 77.61,
+      "instruction_following": 16.22,
+      "superclue_total": 64.6,
+      "benchlm_score": 76,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "qwen35",
+    "capabilities": {
+      "math_reasoning": 84.39,
+      "code_generation": 51.04,
+      "science_reasoning": 75.61,
+      "agent": 71.52,
+      "hallucination_control": 84.39,
+      "instruction_following": 19.46,
+      "superclue_total": 64.48,
+      "benchlm_score": 77,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "glm5",
+    "capabilities": {
+      "math_reasoning": 73.95,
+      "code_generation": 58.32,
+      "science_reasoning": 75,
+      "agent": 66.64,
+      "hallucination_control": 86.85,
+      "instruction_following": 24.86,
+      "superclue_total": 64.27,
+      "benchlm_score": 82,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "deepseek-v32",
+    "capabilities": {
+      "math_reasoning": 78.15,
+      "code_generation": 60.43,
+      "science_reasoning": 73.17,
+      "agent": 56.62,
+      "hallucination_control": 77.23,
+      "instruction_following": 25.95,
+      "superclue_total": 61.92,
+      "benchlm_score": 67,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [
+        "src-benchlm-202604"
+      ],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "mimo-v2",
+    "capabilities": {
+      "math_reasoning": 84.03,
+      "code_generation": 59.61,
+      "science_reasoning": 74.39,
+      "agent": 55.97,
+      "hallucination_control": 73.8,
+      "instruction_following": 16.22,
+      "superclue_total": 60.67,
+      "benchlm_score": 70,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "hy20",
+    "capabilities": {
+      "math_reasoning": 76.47,
+      "code_generation": 57.58,
+      "science_reasoning": 70.73,
+      "agent": 59.68,
+      "hallucination_control": 76.46,
+      "instruction_following": 14.05,
+      "superclue_total": 59.16,
+      "benchlm_score": 60,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "longcat",
+    "capabilities": {
+      "math_reasoning": 77.31,
+      "code_generation": 51.86,
+      "science_reasoning": 69.51,
+      "agent": 67.94,
+      "hallucination_control": 66.31,
+      "instruction_following": 11.89,
+      "superclue_total": 57.47,
+      "benchlm_score": 58,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "step35",
+    "capabilities": {
+      "math_reasoning": 80.67,
+      "code_generation": 50.71,
+      "science_reasoning": 68.29,
+      "agent": 64.06,
+      "hallucination_control": 63.94,
+      "instruction_following": 9.73,
+      "superclue_total": 56.23,
+      "benchlm_score": 62,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "minimax-m27",
+    "capabilities": {
+      "math_reasoning": 78.15,
+      "code_generation": 58.74,
+      "science_reasoning": 64.63,
+      "agent": 59.68,
+      "hallucination_control": 55.61,
+      "instruction_following": 17.3,
+      "superclue_total": 55.68,
+      "benchlm_score": 57,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "spark-x2",
+    "capabilities": {
+      "math_reasoning": 78.15,
+      "code_generation": 41.19,
+      "science_reasoning": 71.95,
+      "agent": 62.13,
+      "hallucination_control": 62.23,
+      "instruction_following": 1.08,
+      "superclue_total": 52.79,
+      "benchlm_score": 50,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  }
+]

@@ -1,0 +1,189 @@
+[
+  {
+    "model_id": "doubao-seed",
+    "model_name": "Doubao-Seed-2.0-pro-260215(high)",
+    "short_name": "豆包 Seed 2.0",
+    "vendor_name": "字节跳动",
+    "vendor_name_en": "ByteDance",
+    "logo": "🔥",
+    "open_source": false,
+    "context_window": "256K",
+    "model_type": "non-reasoning",
+    "status": "active",
+    "latest_version_label": "2026-02",
+    "display": {
+      "color": "#3b82f6",
+      "strength_detail": "SuperCLUE国内总分第一（71.53），与GPT-5.4仅差0.95分，跻身全球第一梯队。智能体任务规划81.04领先国内所有模型，精确指令遵循39.46为国内最高。"
+    }
+  },
+  {
+    "model_id": "kimi-k25",
+    "model_name": "Kimi-K2.5-Thinking",
+    "short_name": "Kimi K2.5",
+    "vendor_name": "月之暗面",
+    "vendor_name_en": "Moonshot AI",
+    "logo": "🌙",
+    "open_source": true,
+    "context_window": "128K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-03",
+    "display": {
+      "color": "#8b5cf6",
+      "strength_detail": "BenchLM综合76分，国产开源顶级。代码生成65.50为国内开源最高，智能体任务规划78.44仅次于豆包。开源模型中综合表现最均衡。"
+    }
+  },
+  {
+    "model_id": "qwen35",
+    "model_name": "Qwen3.5-397B-A17B-Thinking",
+    "short_name": "通义千问 3.5",
+    "vendor_name": "阿里巴巴",
+    "vendor_name_en": "Alibaba",
+    "logo": "☁️",
+    "open_source": true,
+    "context_window": "128K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-03",
+    "display": {
+      "color": "#f97316",
+      "strength_detail": "BenchLM综合77分，国产开源第一。幻觉控制84.39全场最高，数学推理84.39同样顶尖。开源生态最完善，128K超长上下文。"
+    }
+  },
+  {
+    "model_id": "glm5",
+    "model_name": "GLM-5",
+    "short_name": "GLM-5",
+    "vendor_name": "智谱AI",
+    "vendor_name_en": "Zhipu AI",
+    "logo": "🧠",
+    "open_source": true,
+    "context_window": "200K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-03",
+    "display": {
+      "color": "#06b6d4",
+      "strength_detail": "BenchLM综合82分，国产模型最高！幻觉控制86.85全场第一，科学推理75.00稳健。GLM-5(Reasoning)版本在BenchLM开源榜排名全球第一。"
+    }
+  },
+  {
+    "model_id": "deepseek-v32",
+    "model_name": "DeepSeek-V3.2-Thinking",
+    "short_name": "DeepSeek V3.2",
+    "vendor_name": "深度求索",
+    "vendor_name_en": "DeepSeek",
+    "logo": "🐋",
+    "open_source": true,
+    "context_window": "128K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-03",
+    "display": {
+      "color": "#10b981",
+      "strength_detail": "精确指令遵循25.95为国内开源最高，全维度均衡发展无明显短板。API价格透明（输入2元/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
+    }
+  },
+  {
+    "model_id": "mimo-v2",
+    "model_name": "MiMo-V2-Pro",
+    "short_name": "MiMo V2 Pro",
+    "vendor_name": "小米集团",
+    "vendor_name_en": "Xiaomi",
+    "logo": "📱",
+    "open_source": false,
+    "context_window": "256K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-03",
+    "display": {
+      "color": "#f59e0b",
+      "strength_detail": "数学推理84.03全场顶尖，256K超长上下文。BenchLM 70分，小米首款旗舰推理模型，专为Agent时代设计，上榜即引发关注。"
+    }
+  },
+  {
+    "model_id": "hy20",
+    "model_name": "Tencent HY 2.0 Think",
+    "short_name": "混元 2.0",
+    "vendor_name": "腾讯",
+    "vendor_name_en": "Tencent",
+    "logo": "💎",
+    "open_source": false,
+    "context_window": "128K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-02",
+    "display": {
+      "color": "#0ea5e9",
+      "strength_detail": "各维度均衡发展，幻觉控制76.46与数学推理76.47旗鼓相当。科学推理70.73稳健，适合企业级稳定部署场景。"
+    }
+  },
+  {
+    "model_id": "longcat",
+    "model_name": "LongCat-Flash-Thinking-2601",
+    "short_name": "LongCat",
+    "vendor_name": "美团",
+    "vendor_name_en": "Meituan",
+    "logo": "🐱",
+    "open_source": true,
+    "context_window": "128K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-01",
+    "display": {
+      "color": "#f59e0b",
+      "strength_detail": "美团推出的开源推理模型，智能体任务规划67.94表现亮眼，数学推理77.31稳健。开源可部署，适合本地化场景。"
+    }
+  },
+  {
+    "model_id": "step35",
+    "model_name": "Step-3.5-Flash",
+    "short_name": "Step 3.5",
+    "vendor_name": "阶跃星辰",
+    "vendor_name_en": "StepFun",
+    "logo": "⚡",
+    "open_source": true,
+    "context_window": "128K",
+    "model_type": "reasoning",
+    "status": "active",
+    "latest_version_label": "2026-03",
+    "display": {
+      "color": "#ec4899",
+      "strength_detail": "数学推理80.67在同分段中最高，科学推理68.29稳健。开源高性价比之选，阶跃星辰持续迭代中。"
+    }
+  },
+  {
+    "model_id": "minimax-m27",
+    "model_name": "MiniMax-M2.7",
+    "short_name": "MiniMax M2.7",
+    "vendor_name": "稀宇科技",
+    "vendor_name_en": "MiniMax",
+    "logo": "✨",
+    "open_source": false,
+    "context_window": "128K",
+    "model_type": "non-reasoning",
+    "status": "active",
+    "latest_version_label": "2026-02",
+    "display": {
+      "color": "#a855f7",
+      "strength_detail": "数学推理78.15表现突出，代码生成58.74稳健。BenchLM 57分，闭源部署灵活，适合对数学和编程有需求的业务场景。"
+    }
+  },
+  {
+    "model_id": "spark-x2",
+    "model_name": "Spark X2",
+    "short_name": "星火 X2",
+    "vendor_name": "科大讯飞",
+    "vendor_name_en": "iFlytek",
+    "logo": "🌟",
+    "open_source": false,
+    "context_window": "128K",
+    "model_type": "non-reasoning",
+    "status": "active",
+    "latest_version_label": "2026-01",
+    "display": {
+      "color": "#ef4444",
+      "strength_detail": "科学推理71.95在同分段中最高，数学推理78.15不俗。语音交互领域传统强者，适合教育和科研场景。"
+    }
+  }
+]

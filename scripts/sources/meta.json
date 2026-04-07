@@ -1,0 +1,8 @@
+{
+  "data_cutoff_date": "2026-03-30",
+  "page_generated_at": "2026-04-07T09:05:58.900Z",
+  "version": "2026.04.07",
+  "update_batch_id": "batch-20260407",
+  "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据",
+  "model_count": 11
+}
