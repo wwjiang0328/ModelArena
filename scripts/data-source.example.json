@@ -1,0 +1,52 @@
+{
+  "_comment": "这是 data-source.json 的格式示例。请将此文件复制为 data-source.json 并填入真实数据。",
+  "_note": "每次更新数据时，只需修改 data-source.json，GitHub Actions 会自动同步到前端 JSON 文件并触发重新部署。",
+
+  "models": [
+    {
+      "id": "model-id",
+      "name": "Model Full Name",
+      "shortName": "模型简称",
+      "company": "公司名称（中文）",
+      "companyEn": "Company Name (English)",
+      "logo": "🔥",
+      "isOpenSource": false,
+      "contextLength": "128K",
+      "type": "reasoning",
+      "superclue": {
+        "total": 71.53,
+        "math": 84.87,
+        "hallucination": 79.41,
+        "science": 80.49,
+        "instruction": 39.46,
+        "coding": 63.93,
+        "agent": 81.04
+      },
+      "benchlm": {
+        "overall": 65,
+        "arenaElo": 1440
+      },
+      "strengths": ["优势标签1", "优势标签2", "优势标签3"],
+      "strengthDetail": "模型详细描述，包含关键评测数据和特色能力说明。",
+      "color": "#3b82f6"
+    }
+  ],
+
+  "benchlm": {
+    "coding": [
+      { "model": "模型简称", "swebench": 76.8, "swebenchPro": 70, "livecodebench": 85 }
+    ],
+    "math": [
+      { "model": "模型简称", "aime": 98, "hmmt": 95, "math500": 92 }
+    ],
+    "agent": [
+      { "model": "模型简称", "terminalBench": 81, "browseComp": 80, "osworld": 74 }
+    ]
+  },
+
+  "referenceModels": [
+    { "name": "Claude Opus 4.6", "company": "Anthropic", "superclueTotal": 77.02, "benchlmOverall": 81 },
+    { "name": "GPT-5.4", "company": "OpenAI", "superclueTotal": 72.48, "benchlmOverall": 84 },
+    { "name": "Gemini 3.1 Pro", "company": "Google", "superclueTotal": 76.69, "benchlmOverall": 83 }
+  ]
+}
