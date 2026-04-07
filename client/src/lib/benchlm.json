@@ -7,10 +7,10 @@
       "livecodebench": 85
     },
     {
-      "model": "Step 3.5 Flash",
-      "swebench": 74.4,
-      "swebenchPro": 49,
-      "livecodebench": 86.4
+      "model": "GLM-4.7",
+      "swebench": 73.8,
+      "swebenchPro": 51,
+      "livecodebench": 84.9
     },
     {
       "model": "MiMo V2 Flash",
@@ -19,10 +19,10 @@
       "livecodebench": 80.6
     },
     {
-      "model": "GLM-4.7",
-      "swebench": 73.8,
-      "swebenchPro": 51,
-      "livecodebench": 84.9
+      "model": "Step 3.5 Flash",
+      "swebench": 74.4,
+      "swebenchPro": 49,
+      "livecodebench": 86.4
     },
     {
       "model": "GLM-5",
@@ -45,7 +45,7 @@
       "math500": 92
     },
     {
-      "model": "MiMo V2 Flash",
+      "model": "MiMo V2 Pro",
       "aime": 94.1,
       "hmmt": 76,
       "math500": 90

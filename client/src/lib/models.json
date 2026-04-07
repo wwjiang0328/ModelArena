@@ -1,7 +1,7 @@
 [
   {
     "id": "doubao-seed",
-    "name": "Doubao-Seed-2.0-pro",
+    "name": "Doubao-Seed-2.0-pro-260215(high)",
     "shortName": "豆包 Seed 2.0",
     "company": "字节跳动",
     "companyEn": "ByteDance",
@@ -26,7 +26,7 @@
       "智能体",
       "综合能力"
     ],
-    "strengthDetail": "SuperCLUE国内总分第一，中文综合理解能力突出，智能体任务规划表现优异",
+    "strengthDetail": "SuperCLUE国内总分第一（71.53），与GPT-5.4仅差0.95分，跻身全球第一梯队。智能体任务规划81.04领先国内所有模型，精确指令遵循39.46为国内最高。",
     "color": "#3b82f6"
   },
   {
@@ -41,23 +41,22 @@
     "type": "reasoning",
     "superclue": {
       "total": 64.6,
-      "math": 84.03,
-      "hallucination": 81.51,
+      "math": 81.51,
+      "hallucination": 77.61,
       "science": 68.29,
       "instruction": 16.22,
       "coding": 65.5,
       "agent": 78.44
     },
     "benchlm": {
-      "overall": 74,
-      "arenaElo": 1447
+      "overall": 76
     },
     "strengths": [
       "编程之王",
       "数学推理",
-      "代码生成"
+      "智能体"
     ],
-    "strengthDetail": "SWE-bench Verified 76.8 全球顶尖，LiveCodeBench 85 编程能力极强，AIME 96.1 数学接近满分",
+    "strengthDetail": "BenchLM综合76分，国产开源顶级。代码生成65.50为国内开源最高，智能体任务规划78.44仅次于豆包。开源模型中综合表现最均衡。",
     "color": "#8b5cf6"
   },
   {
@@ -72,23 +71,22 @@
     "type": "reasoning",
     "superclue": {
       "total": 64.48,
-      "math": 84.87,
-      "hallucination": 84.87,
+      "math": 84.39,
+      "hallucination": 84.39,
       "science": 75.61,
       "instruction": 19.46,
       "coding": 51.04,
       "agent": 71.52
     },
     "benchlm": {
-      "overall": 75,
-      "arenaElo": 1450
+      "overall": 77
     },
     "strengths": [
-      "均衡全能",
       "幻觉控制",
+      "均衡全能",
       "开源生态"
     ],
-    "strengthDetail": "BenchLM综合75分国产第二，幻觉控制84.87领先，MATH 500得分93全场最高，开源生态最完善",
+    "strengthDetail": "BenchLM综合77分，国产开源第一。幻觉控制84.39全场最高，数学推理84.39同样顶尖。开源生态最完善，128K超长上下文。",
     "color": "#f97316"
   },
   {
@@ -111,15 +109,14 @@
       "agent": 66.64
     },
     "benchlm": {
-      "overall": 78,
-      "arenaElo": 1456
+      "overall": 82
     },
     "strengths": [
-      "数学天花板",
+      "幻觉控制",
       "智能体",
       "全能王"
     ],
-    "strengthDetail": "BenchLM综合78分国产第一！AIME 98近乎满分，Terminal-Bench 81智能体能力全球顶级，OSWorld 74媲美GPT-5.4",
+    "strengthDetail": "BenchLM综合82分，国产模型最高！幻觉控制86.85全场第一，科学推理75.00稳健。GLM-5(Reasoning)版本在BenchLM开源榜排名全球第一。",
     "color": "#06b6d4"
   },
   {
@@ -142,24 +139,24 @@
       "agent": 56.62
     },
     "benchlm": {
-      "overall": 66
+      "overall": 67
     },
     "strengths": [
       "开源先驱",
       "均衡发展",
       "生态广泛"
     ],
-    "strengthDetail": "开源大模型的标杆，全维度均衡发展无明显短板，全球开发者生态最活跃",
+    "strengthDetail": "精确指令遵循25.95为国内开源最高，全维度均衡发展无明显短板。全球开发者生态最活跃，开源大模型的持续标杆。",
     "color": "#10b981"
   },
   {
     "id": "mimo-v2",
     "name": "MiMo-V2-Pro",
-    "shortName": "MiMo V2",
+    "shortName": "MiMo V2 Pro",
     "company": "小米集团",
     "companyEn": "Xiaomi",
     "logo": "📱",
-    "isOpenSource": true,
+    "isOpenSource": false,
     "contextLength": "256K",
     "type": "reasoning",
     "superclue": {
@@ -175,11 +172,11 @@
       "overall": 70
     },
     "strengths": [
-      "效率之星",
       "数学强劲",
-      "长上下文"
+      "长上下文",
+      "效率之星"
     ],
-    "strengthDetail": "从58分跃升至70分的黑马，AIME 94.1数学强劲，256K超长上下文，SWE-bench 73.4编程出色",
+    "strengthDetail": "数学推理84.03全场顶尖，256K超长上下文。BenchLM 70分，小米首款旗舰推理模型，专为Agent时代设计，上榜即引发关注。",
     "color": "#f59e0b"
   },
   {
@@ -209,8 +206,8 @@
       "科学推理",
       "企业级"
     ],
-    "strengthDetail": "腾讯混元系列最新力作，各维度均衡发展，科学推理和幻觉控制表现稳健",
-    "color": "#3b82f6"
+    "strengthDetail": "各维度均衡发展，幻觉控制76.46与数学推理76.47旗鼓相当。科学推理70.73稳健，适合企业级稳定部署场景。",
+    "color": "#0ea5e9"
   },
   {
     "id": "longcat",
@@ -239,7 +236,7 @@
       "数学推理",
       "开源"
     ],
-    "strengthDetail": "美团推出的开源推理模型，智能体任务规划67.94表现亮眼，数学推理77.31稳健",
+    "strengthDetail": "美团推出的开源推理模型，智能体任务规划67.94表现亮眼，数学推理77.31稳健。开源可部署，适合本地化场景。",
     "color": "#f59e0b"
   },
   {
@@ -262,14 +259,14 @@
       "agent": 64.06
     },
     "benchlm": {
-      "overall": 70
+      "overall": 62
     },
     "strengths": [
-      "编程新秀",
       "数学推理",
+      "编程新秀",
       "高性价比"
     ],
-    "strengthDetail": "LiveCodeBench 86.4全场最高！AIME 97.3接近满分，BenchLM 70分跻身顶级，开源高性价比之选",
+    "strengthDetail": "数学推理80.67在同分段中最高，科学推理68.29稳健。开源高性价比之选，阶跃星辰持续迭代中。",
     "color": "#ec4899"
   },
   {
@@ -295,11 +292,11 @@
       "overall": 57
     },
     "strengths": [
-      "性价比",
+      "数学能力",
       "编程导向",
-      "多语言"
+      "性价比"
     ],
-    "strengthDetail": "SWE-bench Pro 56.22编程实力不俗，SWE-Multilingual 76.5多语言编程突出，极具性价比",
+    "strengthDetail": "数学推理78.15表现突出，代码生成58.74稳健。BenchLM 57分，闭源部署灵活，适合对数学和编程有需求的业务场景。",
     "color": "#a855f7"
   },
   {
@@ -329,7 +326,7 @@
       "数学能力",
       "中文语音"
     ],
-    "strengthDetail": "科学推理71.95表现突出，数学推理78.15不俗，语音交互领域的传统强者",
+    "strengthDetail": "科学推理71.95在同分段中最高，数学推理78.15不俗。语音交互领域传统强者，适合教育和科研场景。",
     "color": "#ef4444"
   }
 ]

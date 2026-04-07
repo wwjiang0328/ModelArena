@@ -2,8 +2,14 @@
  * Footer - 数据来源说明和页脚
  */
 import { ExternalLink } from "lucide-react";
+import { dataUpdatedAt } from "@/lib/data";
 
 export default function Footer() {
+  // 将 "YYYY-MM-DD" 格式化为 "YYYY年MM月DD日"
+  const formattedDate = dataUpdatedAt
+    ? dataUpdatedAt.replace(/^(\d{4})-(\d{2})-(\d{2})$/, "$1年$2月$3日")
+    : "—";
+
   return (
     <footer className="border-t border-border bg-muted/20">
       <div className="container py-8 sm:py-12">
@@ -13,15 +19,25 @@ export default function Footer() {
             <ul className="space-y-2 text-xs text-muted-foreground">
               <li className="flex items-center gap-2">
                 <ExternalLink className="w-3 h-3 shrink-0" />
-                <span>SuperCLUE 中文大模型测评基准 — 2026年3月评测数据</span>
+                <a
+                  href="https://www.superclueai.com/generalpage"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  SuperCLUE 中文大模型测评基准 — 通用榜
+                </a>
               </li>
               <li className="flex items-center gap-2">
                 <ExternalLink className="w-3 h-3 shrink-0" />
-                <span>BenchLM.ai — 全球大模型基准评测排行榜（2026年3月）</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <ExternalLink className="w-3 h-3 shrink-0" />
-                <span>Chatbot Arena (LMSYS) — 人类偏好盲测 Elo 排名</span>
+                <a
+                  href="https://benchlm.ai/best/overall"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-foreground transition-colors"
+                >
+                  BenchLM.ai — 全球大模型基准评测排行榜
+                </a>
               </li>
             </ul>
           </div>
@@ -36,7 +52,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-6 border-t border-border/50 text-center text-xs text-muted-foreground">
-          <p>国产大模型天梯榜 · 数据更新至 2026年3月 · 仅供学习研究参考</p>
+          <p>
+            国产大模型天梯榜 · 数据统计截止 {formattedDate} · 仅供学习研究参考
+          </p>
         </div>
       </div>
     </footer>

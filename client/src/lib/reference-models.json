@@ -3,18 +3,18 @@
     "name": "Claude Opus 4.6",
     "company": "Anthropic",
     "superclueTotal": 77.02,
-    "benchlmOverall": 81
-  },
-  {
-    "name": "GPT-5.4",
-    "company": "OpenAI",
-    "superclueTotal": 72.48,
-    "benchlmOverall": 84
+    "benchlmOverall": 85
   },
   {
     "name": "Gemini 3.1 Pro",
     "company": "Google",
     "superclueTotal": 76.69,
-    "benchlmOverall": 83
+    "benchlmOverall": 87
+  },
+  {
+    "name": "GPT-5.4",
+    "company": "OpenAI",
+    "superclueTotal": 72.48,
+    "benchlmOverall": 82
   }
 ]

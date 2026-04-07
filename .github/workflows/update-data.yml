@@ -69,6 +69,7 @@ jobs:
           git diff --quiet client/src/lib/models.json \
                             client/src/lib/benchlm.json \
                             client/src/lib/reference-models.json \
+                            client/src/lib/data-meta.json \
           && echo "changed=false" >> $GITHUB_OUTPUT \
           || echo "changed=true" >> $GITHUB_OUTPUT
 
@@ -81,7 +82,8 @@ jobs:
 
           git add client/src/lib/models.json \
                   client/src/lib/benchlm.json \
-                  client/src/lib/reference-models.json
+                  client/src/lib/reference-models.json \
+                  client/src/lib/data-meta.json
 
           git commit -m "chore(data): auto-update model data $(date -u +'%Y-%m-%d')"
           git push

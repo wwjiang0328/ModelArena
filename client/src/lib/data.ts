@@ -74,12 +74,16 @@ export interface BenchLMAgentItem {
 import modelsJson from "./models.json";
 import benchlmJson from "./benchlm.json";
 import referenceModelsJson from "./reference-models.json";
+import metaJson from "./data-meta.json";
 
 export const models: ModelData[] = modelsJson as ModelData[];
 export const referenceModels: ReferenceModel[] = referenceModelsJson as ReferenceModel[];
 export const benchlmCoding: BenchLMCodingItem[] = (benchlmJson as any).coding as BenchLMCodingItem[];
 export const benchlmMath: BenchLMMathItem[] = (benchlmJson as any).math as BenchLMMathItem[];
 export const benchlmAgent: BenchLMAgentItem[] = (benchlmJson as any).agent as BenchLMAgentItem[];
+
+/** 数据统计截止日期（格式：YYYY-MM-DD），由 GitHub Actions 自动更新 */
+export const dataUpdatedAt: string = (metaJson as any).updatedAt as string;
 
 // ─── 静态配置（维度定义，不随数据更新变化）────────────────────────────────────
 

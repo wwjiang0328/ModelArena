@@ -144,6 +144,13 @@ async function main() {
   writeJson(resolve(LIB_DIR, "benchlm.json"), transformed.benchlm);
   writeJson(resolve(LIB_DIR, "reference-models.json"), transformed.referenceModels);
 
+  // 写入 data-meta.json（包含数据统计截止日期）
+  const meta = {
+    updatedAt: rawData._updated || new Date().toISOString().slice(0, 10),
+    sources: rawData._sources || []
+  };
+  writeJson(resolve(LIB_DIR, "data-meta.json"), meta);
+
   log(`✅ Data update complete! ${transformed.models.length} models processed.`);
 }
 

@@ -4,7 +4,7 @@
  */
 import { motion } from "framer-motion";
 import { Crown, Trophy, Medal, Sparkles } from "lucide-react";
-import { models } from "@/lib/data";
+import { models, dataUpdatedAt } from "@/lib/data";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663486795345/oARNikNz6QTshgAdzsb4cE/hero-bg-mWkcuQSYnUSUyjcWDgpkb8.webp";
 
@@ -38,7 +38,11 @@ export default function HeroSection() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 mb-5">
             <Sparkles className="w-4 h-4 text-amber-400" />
-            <span className="text-sm font-medium text-amber-300 tracking-wide">2026年3月 · 权威评测数据</span>
+            <span className="text-sm font-medium text-amber-300 tracking-wide">
+              {dataUpdatedAt
+                ? dataUpdatedAt.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_, y, m, d) => `${y}年${m}月${d}日`)
+                : "最新"} · 权威评测数据
+            </span>
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">
             <span className="text-gradient-gold">国产大模型</span>
