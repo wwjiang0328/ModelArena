@@ -4,13 +4,22 @@
     "name": "SuperCLUE 中文大模型测评基准",
     "url": "https://www.superclueai.com/generalpage",
     "data_date": "2026-03-30",
-    "description": "SuperCLUE 2026年3月通用榜，覆盖数学推理、代码生成、科学推理、智能体、幻觉控制、指令遵循六大维度"
+    "description": "SuperCLUE 2026年3月通用榜，覆盖数学推理、代码生成、科学推理、智能体、幻觉控制、指令遵循六大维度",
+    "applicable_fields": [
+      "capabilities",
+      "basic_info"
+    ],
+    "trust_level": "authoritative"
   },
   {
     "source_id": "src-benchlm-202604",
     "name": "BenchLM.ai 全球大模型综合排行榜",
     "url": "https://benchlm.ai/best/overall",
     "data_date": "2026-04-07",
-    "description": "BenchLM.ai 综合评分，覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均"
+    "description": "BenchLM.ai 综合评分，覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均",
+    "applicable_fields": [
+      "capabilities"
+    ],
+    "trust_level": "aggregated"
   }
 ]

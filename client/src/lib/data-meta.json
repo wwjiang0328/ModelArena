@@ -1,11 +1,34 @@
 {
   "updatedAt": "2026-03-30",
-  "pageGeneratedAt": "2026-04-07T09:05:58.900Z",
+  "pageGeneratedAt": "2026-04-07T09:17:49.209Z",
   "version": "2026.04.07",
   "updateBatchId": "batch-20260407",
   "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据",
   "sources": [
     "SuperCLUE 中文大模型测评基准",
     "BenchLM.ai 全球大模型综合排行榜"
+  ],
+  "sourceDetails": [
+    {
+      "id": "src-superclue-202603",
+      "name": "SuperCLUE 中文大模型测评基准",
+      "url": "https://www.superclueai.com/generalpage",
+      "dataDate": "2026-03-30",
+      "applicableFields": [
+        "capabilities",
+        "basic_info"
+      ],
+      "trustLevel": "authoritative"
+    },
+    {
+      "id": "src-benchlm-202604",
+      "name": "BenchLM.ai 全球大模型综合排行榜",
+      "url": "https://benchlm.ai/best/overall",
+      "dataDate": "2026-04-07",
+      "applicableFields": [
+        "capabilities"
+      ],
+      "trustLevel": "aggregated"
+    }
   ]
 }

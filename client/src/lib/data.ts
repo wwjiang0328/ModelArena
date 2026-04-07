@@ -26,9 +26,14 @@ export interface ModelPricing {
   hasApi: boolean;
   inputTokenPrice: number | null;
   outputTokenPrice: number | null;
+  cacheInputPrice: number | null;
   currency: string;
+  pricingUnit: string;
   pricingMode: string;
+  subscriptionMode: string | null;
   freeTier: boolean | null;
+  hasSubscription: boolean | null;
+  enterpriseVersion: boolean | null;
   privateDeployment: boolean | null;
   /**
    * 价格状态枚举：
@@ -40,6 +45,7 @@ export interface ModelPricing {
    *   "unknown"                 → 未知
    */
   priceStatus: "public" | "officially_not_public" | "manual_inquiry_required" | "no_api_yet" | "open_source_free" | "unknown";
+  priceEffectiveDate: string | null;
   priceSourceUrl: string | null;
 }
 
@@ -130,6 +136,18 @@ export interface BenchLMAgentItem {
   osworld: number;
 }
 
+/** 来源详情（由 data-source.json 的 sources 字段驱动） */
+export interface SourceDetail {
+  id: string;
+  name: string;
+  url: string;
+  dataDate: string;
+  /** 该来源适用的字段列表（如 capabilities、basic_info） */
+  applicableFields: string[];
+  /** 信任等级：official > authoritative > aggregated > community > manual */
+  trustLevel: "official" | "authoritative" | "aggregated" | "community" | "manual" | "unknown";
+}
+
 /** 数据元信息 */
 export interface DataMeta {
   /** 数据统计截止日期（格式：YYYY-MM-DD），与模型新品发布节奏对齐，不固定周期 */
@@ -142,8 +160,10 @@ export interface DataMeta {
   updateBatchId: string;
   /** 本次更新备注 */
   notes: string;
-  /** 数据来源列表 */
+  /** 数据来源名称列表（展示用） */
   sources: string[];
+  /** 详细来源信息（含信任等级和适用字段） */
+  sourceDetails?: SourceDetail[];
 }
 
 // ─── 动态数据（由 JSON 文件驱动，通过 GitHub Actions 自动更新）────────────────

@@ -81,16 +81,22 @@ function toFrontendModel(m) {
       arenaElo: caps.arena_elo     ?? undefined,
     },
 
-    // 价格摘要（新增字段，前端可选展示）
+    // 价格摘要（完整商业化字段，前端可选展示）
     pricing: {
       hasApi:            pricing.has_api            ?? false,
       inputTokenPrice:   pricing.input_token_price  ?? null,
       outputTokenPrice:  pricing.output_token_price ?? null,
+      cacheInputPrice:   pricing.cache_input_price  ?? null,
       currency:          pricing.currency           ?? "CNY",
+      pricingUnit:       pricing.pricing_unit       ?? "per_1M_tokens",
       pricingMode:       pricing.pricing_mode       ?? "未知",
+      subscriptionMode:  pricing.subscription_mode  ?? null,
       freeTier:          pricing.free_tier          ?? null,
+      hasSubscription:   pricing.has_subscription   ?? null,
+      enterpriseVersion: pricing.enterprise_version ?? null,
       privateDeployment: pricing.private_deployment ?? null,
       priceStatus:       pricing.price_status       ?? "unknown",
+      priceEffectiveDate: pricing.price_effective_date ?? null,
       priceSourceUrl:    pricing.price_source_url   ?? null,
     },
 
@@ -170,14 +176,24 @@ async function main() {
   }));
   writeJson(resolve(LIB_DIR, "reference-models.json"), refModels);
 
-  // data-meta.json（新增 page_generated_at 字段）
+  // data-meta.json（含来源详情）
   const dataMeta = {
     updatedAt:        meta.data_cutoff_date,
     pageGeneratedAt:  meta.page_generated_at,
     version:          meta.version,
     updateBatchId:    meta.update_batch_id,
     notes:            meta.notes || "",
+    // 简要来源名称列表（兼容旧格式）
     sources:          (sources || []).map(s => s.name),
+    // 详细来源信息（含信任等级和适用字段）
+    sourceDetails:    (sources || []).map(s => ({
+      id:               s.source_id,
+      name:             s.name,
+      url:              s.url,
+      dataDate:         s.data_date,
+      applicableFields: s.applicable_fields || [],
+      trustLevel:       s.trust_level || "unknown",
+    })),
   };
   writeJson(resolve(LIB_DIR, "data-meta.json"), dataMeta);
 
