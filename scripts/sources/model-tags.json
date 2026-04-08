@@ -100,6 +100,20 @@
     ]
   },
   {
+    "model_id": "qwen35-122b",
+    "tags": [
+      "开源",
+      "推理模型",
+      "长上下文",
+      "数学推理"
+    ],
+    "scenario_recommendations": [
+      "数学推理",
+      "长文档处理",
+      "私有化部署"
+    ]
+  },
+  {
     "model_id": "longcat",
     "tags": [
       "智能体",

@@ -1,8 +1,8 @@
 {
-  "data_cutoff_date": "2026-03-30",
-  "page_generated_at": "2026-04-07T09:17:49.209Z",
-  "version": "2026.04.07",
-  "update_batch_id": "batch-20260407",
-  "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据",
-  "model_count": 11
+  "data_cutoff_date": "2026-04-07",
+  "page_generated_at": "2026-04-08T02:54:18.459Z",
+  "version": "2026.04.08",
+  "update_batch_id": "batch-20260408",
+  "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据，更新 BenchLM 参考模型分数，新增 Qwen3.5-122B 模型，修正各模型 BenchLM 评分",
+  "model_count": 12
 }

@@ -1,6 +1,7 @@
 [
   {
     "model_id": "doubao-seed",
+    "short_name": "豆包 Seed 2.0",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -21,6 +22,7 @@
   },
   {
     "model_id": "kimi-k25",
+    "short_name": "Kimi K2.5",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -41,6 +43,7 @@
   },
   {
     "model_id": "qwen35",
+    "short_name": "通义千问 3.5",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -61,6 +64,7 @@
   },
   {
     "model_id": "glm5",
+    "short_name": "GLM-5",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -81,6 +85,7 @@
   },
   {
     "model_id": "deepseek-v32",
+    "short_name": "DeepSeek V3.2",
     "pricing": {
       "has_api": true,
       "input_token_price": 2,
@@ -101,6 +106,7 @@
   },
   {
     "model_id": "mimo-v2",
+    "short_name": "MiMo V2 Pro",
     "pricing": {
       "has_api": false,
       "input_token_price": null,
@@ -121,6 +127,7 @@
   },
   {
     "model_id": "hy20",
+    "short_name": "混元 2.0",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -141,6 +148,7 @@
   },
   {
     "model_id": "qwen35-122b",
+    "short_name": "通义千问 3.5 小杯",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -161,6 +169,7 @@
   },
   {
     "model_id": "longcat",
+    "short_name": "LongCat",
     "pricing": {
       "has_api": false,
       "input_token_price": null,
@@ -181,6 +190,7 @@
   },
   {
     "model_id": "step35",
+    "short_name": "Step 3.5",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -201,6 +211,7 @@
   },
   {
     "model_id": "minimax-m27",
+    "short_name": "MiniMax M2.7",
     "pricing": {
       "has_api": true,
       "input_token_price": null,
@@ -221,6 +232,7 @@
   },
   {
     "model_id": "spark-x2",
+    "short_name": "星火 X2",
     "pricing": {
       "has_api": true,
       "input_token_price": null,

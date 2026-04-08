@@ -57,7 +57,7 @@
       "hallucination_control": 84.39,
       "instruction_following": 19.46,
       "superclue_total": 64.48,
-      "benchlm_score": 77,
+      "benchlm_score": 78,
       "arena_elo": null
     },
     "source_refs": {
@@ -81,7 +81,7 @@
       "hallucination_control": 86.85,
       "instruction_following": 24.86,
       "superclue_total": 64.27,
-      "benchlm_score": 82,
+      "benchlm_score": 76,
       "arena_elo": null
     },
     "source_refs": {
@@ -105,7 +105,7 @@
       "hallucination_control": 77.23,
       "instruction_following": 25.95,
       "superclue_total": 61.92,
-      "benchlm_score": 67,
+      "benchlm_score": 68,
       "arena_elo": null
     },
     "source_refs": {
@@ -156,6 +156,30 @@
       "instruction_following": 14.05,
       "superclue_total": 59.16,
       "benchlm_score": 60,
+      "arena_elo": null
+    },
+    "source_refs": {
+      "capabilities": [
+        "src-superclue-202603",
+        "src-benchlm-202604"
+      ],
+      "pricing": [],
+      "basic_info": [
+        "src-superclue-202603"
+      ]
+    }
+  },
+  {
+    "model_id": "qwen35-122b",
+    "capabilities": {
+      "math_reasoning": 82.35,
+      "code_generation": 50.18,
+      "science_reasoning": 69.51,
+      "agent": 65.15,
+      "hallucination_control": 70.5,
+      "instruction_following": 13.51,
+      "superclue_total": 58.53,
+      "benchlm_score": 70,
       "arena_elo": null
     },
     "source_refs": {
@@ -227,7 +251,7 @@
       "hallucination_control": 55.61,
       "instruction_following": 17.3,
       "superclue_total": 55.68,
-      "benchlm_score": 57,
+      "benchlm_score": 60,
       "arena_elo": null
     },
     "source_refs": {

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "data_cutoff_date": "2026-03-30",
-    "page_generated_at": "2026-04-07T09:17:49.209Z",
-    "version": "2026.04.07",
-    "update_batch_id": "batch-20260407",
-    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据",
-    "model_count": 11
+    "data_cutoff_date": "2026-04-07",
+    "page_generated_at": "2026-04-08T02:54:18.459Z",
+    "version": "2026.04.08",
+    "update_batch_id": "batch-20260408",
+    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据，更新 BenchLM 参考模型分数，新增 Qwen3.5-122B 模型，修正各模型 BenchLM 评分",
+    "model_count": 12
   },
   "models": [
     {
@@ -188,7 +188,7 @@
         "hallucination_control": 84.39,
         "instruction_following": 19.46,
         "superclue_total": 64.48,
-        "benchlm_score": 77,
+        "benchlm_score": 78,
         "arena_elo": null
       },
       "pricing": {
@@ -269,7 +269,7 @@
         "hallucination_control": 86.85,
         "instruction_following": 24.86,
         "superclue_total": 64.27,
-        "benchlm_score": 82,
+        "benchlm_score": 76,
         "arena_elo": null
       },
       "pricing": {
@@ -350,7 +350,7 @@
         "hallucination_control": 77.23,
         "instruction_following": 25.95,
         "superclue_total": 61.92,
-        "benchlm_score": 67,
+        "benchlm_score": 68,
         "arena_elo": null
       },
       "pricing": {
@@ -571,6 +571,87 @@
       }
     },
     {
+      "model_id": "qwen35-122b",
+      "model_name": "Qwen3.5-122B-A10B-Thinking",
+      "short_name": "通义千问 3.5 小杯",
+      "vendor_name": "阿里巴巴",
+      "vendor_name_en": "Alibaba",
+      "logo": "☁️",
+      "open_source": true,
+      "context_window": "262K",
+      "model_type": "reasoning",
+      "status": "active",
+      "latest_version_label": "2026-03",
+      "capabilities": {
+        "math_reasoning": 82.35,
+        "code_generation": 50.18,
+        "science_reasoning": 69.51,
+        "agent": 65.15,
+        "hallucination_control": 70.5,
+        "instruction_following": 13.51,
+        "superclue_total": 58.53,
+        "benchlm_score": 70,
+        "arena_elo": null
+      },
+      "pricing": {
+        "has_api": true,
+        "input_token_price": null,
+        "output_token_price": null,
+        "cache_input_price": null,
+        "currency": "CNY",
+        "pricing_unit": "per_1M_tokens",
+        "pricing_mode": "开源免费自部署",
+        "subscription_mode": null,
+        "free_tier": true,
+        "has_subscription": false,
+        "enterprise_version": true,
+        "private_deployment": true,
+        "price_status": "open_source_free",
+        "price_effective_date": null,
+        "price_source_url": "https://huggingface.co/Qwen"
+      },
+      "tags": [
+        "开源",
+        "推理模型",
+        "长上下文",
+        "数学推理"
+      ],
+      "scenario_recommendations": [
+        "数学推理",
+        "长文档处理",
+        "私有化部署"
+      ],
+      "routing_profile": {
+        "cost_level": "low",
+        "speed_level": "fast",
+        "quality_level": "medium",
+        "best_for": [
+          "math",
+          "long_context",
+          "private_deployment"
+        ],
+        "avoid_for": [
+          "instruction_following"
+        ],
+        "stability_level": "high",
+        "recommended_for_production": true
+      },
+      "source_refs": {
+        "capabilities": [
+          "src-superclue-202603",
+          "src-benchlm-202604"
+        ],
+        "pricing": [],
+        "basic_info": [
+          "src-superclue-202603"
+        ]
+      },
+      "display": {
+        "color": "#d97706",
+        "strength_detail": "数学推理82.35表现出色，262K超长上下文为同级最大。开源MoE小杯版，资源消耗更低，BenchLM 70分，适合对算力有限制的私有化部署场景。"
+      }
+    },
+    {
       "model_id": "longcat",
       "model_name": "LongCat-Flash-Thinking-2601",
       "short_name": "LongCat",
@@ -750,7 +831,7 @@
         "hallucination_control": 55.61,
         "instruction_following": 17.3,
         "superclue_total": 55.68,
-        "benchlm_score": 57,
+        "benchlm_score": 60,
         "arena_elo": null
       },
       "pricing": {
@@ -893,49 +974,42 @@
   "benchmarks": {
     "coding": [
       {
-        "model_id": "kimi-k25",
-        "model_label": "Kimi K2.5",
-        "swebench": 76.8,
-        "swebench_pro": 70,
-        "livecodebench": 85
-      },
-      {
         "model_id": "glm5",
-        "model_label": "GLM-4.7",
-        "swebench": 73.8,
-        "swebench_pro": 51,
+        "model_label": "GLM-5",
+        "swebench": 77.8,
+        "swebench_pro": 55.1,
         "livecodebench": 84.9
       },
       {
-        "model_id": "mimo-v2",
-        "model_label": "MiMo V2 Flash",
-        "swebench": 73.4,
-        "swebench_pro": 52,
-        "livecodebench": 80.6
+        "model_id": "kimi-k25",
+        "model_label": "Kimi K2.5",
+        "swebench": 76.8,
+        "swebench_pro": 53.8,
+        "livecodebench": 85
+      },
+      {
+        "model_id": "qwen35",
+        "model_label": "通义千问 3.5",
+        "swebench": 65,
+        "swebench_pro": 48,
+        "livecodebench": 78
+      },
+      {
+        "model_id": "deepseek-v32",
+        "model_label": "DeepSeek V3.2",
+        "swebench": 62,
+        "swebench_pro": 45,
+        "livecodebench": 72
       },
       {
         "model_id": "step35",
         "model_label": "Step 3.5 Flash",
-        "swebench": 74.4,
-        "swebench_pro": 49,
+        "swebench": 58,
+        "swebench_pro": 42,
         "livecodebench": 86.4
-      },
-      {
-        "model_id": "glm5",
-        "model_label": "GLM-5",
-        "swebench": 62,
-        "swebench_pro": 67,
-        "livecodebench": 58
       }
     ],
     "math": [
-      {
-        "model_id": "glm5",
-        "model_label": "GLM-5",
-        "aime": 98,
-        "hmmt": 95,
-        "math500": 92
-      },
       {
         "model_id": "kimi-k25",
         "model_label": "Kimi K2.5",
@@ -944,62 +1018,69 @@
         "math500": 92
       },
       {
+        "model_id": "qwen35",
+        "model_label": "通义千问 3.5",
+        "aime": 93,
+        "hmmt": 88,
+        "math500": 92
+      },
+      {
+        "model_id": "glm5",
+        "model_label": "GLM-5",
+        "aime": 90.3,
+        "hmmt": 93.3,
+        "math500": 90
+      },
+      {
         "model_id": "mimo-v2",
         "model_label": "MiMo V2 Pro",
-        "aime": 94.1,
+        "aime": 87,
         "hmmt": 76,
         "math500": 90
       },
       {
-        "model_id": "qwen35",
-        "model_label": "通义千问 3.5",
-        "aime": 94,
-        "hmmt": 90,
-        "math500": 93
-      },
-      {
         "model_id": "deepseek-v32",
         "model_label": "DeepSeek V3.2",
-        "aime": 88,
-        "hmmt": 84,
+        "aime": 82,
+        "hmmt": 78,
         "math500": 84
       }
     ],
     "agent": [
       {
+        "model_id": "doubao-seed",
+        "model_label": "豆包 Seed 2.0",
+        "terminal_bench": 55,
+        "browse_comp": 70,
+        "osworld": 68
+      },
+      {
         "model_id": "glm5",
         "model_label": "GLM-5",
-        "terminal_bench": 81,
-        "browse_comp": 80,
+        "terminal_bench": 56.2,
+        "browse_comp": 72.4,
         "osworld": 74
       },
       {
         "model_id": "qwen35",
         "model_label": "通义千问 3.5",
-        "terminal_bench": 77,
-        "browse_comp": 78,
+        "terminal_bench": 50,
+        "browse_comp": 73.5,
         "osworld": 70
-      },
-      {
-        "model_id": "deepseek-v32",
-        "model_label": "DeepSeek V3.2",
-        "terminal_bench": 71,
-        "browse_comp": 70,
-        "osworld": 67
-      },
-      {
-        "model_id": "step35",
-        "model_label": "Step 3.5 Flash",
-        "terminal_bench": 62,
-        "browse_comp": 66,
-        "osworld": 54
       },
       {
         "model_id": "kimi-k25",
         "model_label": "Kimi K2.5",
         "terminal_bench": 50.8,
-        "browse_comp": 60.6,
+        "browse_comp": 65.6,
         "osworld": 63.3
+      },
+      {
+        "model_id": "deepseek-v32",
+        "model_label": "DeepSeek V3.2",
+        "terminal_bench": 45,
+        "browse_comp": 68.6,
+        "osworld": 60
       }
     ]
   },
@@ -1009,21 +1090,21 @@
       "model_name": "Claude Opus 4.6",
       "vendor_name": "Anthropic",
       "superclue_total": 77.02,
-      "benchlm_overall": 85
+      "benchlm_overall": 84
     },
     {
       "model_id": "gemini-31-pro",
       "model_name": "Gemini 3.1 Pro",
       "vendor_name": "Google",
       "superclue_total": 76.69,
-      "benchlm_overall": 87
+      "benchlm_overall": 86
     },
     {
       "model_id": "gpt54",
       "model_name": "GPT-5.4",
       "vendor_name": "OpenAI",
       "superclue_total": 72.48,
-      "benchlm_overall": 82
+      "benchlm_overall": 81
     }
   ],
   "sources": [

@@ -117,6 +117,24 @@
     }
   },
   {
+    "model_id": "qwen35-122b",
+    "routing_profile": {
+      "cost_level": "low",
+      "speed_level": "fast",
+      "quality_level": "medium",
+      "best_for": [
+        "math",
+        "long_context",
+        "private_deployment"
+      ],
+      "avoid_for": [
+        "instruction_following"
+      ],
+      "stability_level": "high",
+      "recommended_for_production": true
+    }
+  },
+  {
     "model_id": "longcat",
     "routing_profile": {
       "cost_level": "free",
