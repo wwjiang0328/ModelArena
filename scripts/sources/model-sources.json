@@ -15,7 +15,7 @@
     "source_id": "src-benchlm-202604",
     "name": "BenchLM.ai 全球大模型综合排行榜",
     "url": "https://benchlm.ai/best/overall",
-    "data_date": "2026-04-07",
+    "data_date": "2026-04-08",
     "description": "BenchLM.ai 综合评分，覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均",
     "applicable_fields": [
       "capabilities"

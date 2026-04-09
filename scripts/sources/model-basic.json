@@ -13,7 +13,7 @@
     "latest_version_label": "2026-02",
     "display": {
       "color": "#3b82f6",
-      "strength_detail": "SuperCLUE国内总分第一（71.53），与GPT-5.4仅差0.95分，跻身全球第一梯队。智能体任务规划81.04领先国内所有模型，精确指令遵循39.46为国内最高。"
+      "strength_detail": "SuperCLUE国内总分第一（71.53），与GPT-5.4仅差0.95分，跻身全球第一梯队。智能体任务规划81.04领先国内所有模型，精确指令遵循39.46为国内最高。BenchLM综合65分（未正式上榜），闭源API接入。"
     }
   },
   {
@@ -30,7 +30,7 @@
     "latest_version_label": "2026-03",
     "display": {
       "color": "#8b5cf6",
-      "strength_detail": "BenchLM综合76分，国产开源顶级。代码生成65.50为国内开源最高，智能体任务规划78.44仅次于豆包。开源模型中综合表现最均衡。"
+      "strength_detail": "BenchLM综合76分（中国模型#5），代码生成65.50为国内开源最高，SWE-bench Verified 76.8%，AIME 2025达96.1%为国产模型最高。智能体任务规划78.44仅次于豆包，开源模型中综合表现最均衡。"
     }
   },
   {
@@ -47,7 +47,7 @@
     "latest_version_label": "2026-03",
     "display": {
       "color": "#f97316",
-      "strength_detail": "BenchLM综合77分，国产开源第一。幻觉控制84.39全场最高，数学推理84.39同样顶尖。开源生态最完善，128K超长上下文。"
+      "strength_detail": "BenchLM综合77分（中国模型#3），幻觉控制84.39全场最高，数学推理84.39同样顶尖。BenchLM Agentic加权73.3%位列国产第二。开源MoE架构，128K超长上下文，开源生态最完善。"
     }
   },
   {
@@ -64,7 +64,7 @@
     "latest_version_label": "2026-03",
     "display": {
       "color": "#06b6d4",
-      "strength_detail": "BenchLM综合82分，国产模型最高！幻觉控制86.85全场第一，科学推理75.00稳健。GLM-5(Reasoning)版本在BenchLM开源榜排名全球第一。"
+      "strength_detail": "BenchLM综合76分（中国模型#4），GLM-5(Reasoning)版本BenchLM 81分排名全球#8、国产第一！幻觉控制86.85全场最高，SWE-bench 77.8%，Terminal-Bench 56.2%。BenchLM Agentic加权72.4%，智能体领域国产开源标杆。"
     }
   },
   {
@@ -81,7 +81,7 @@
     "latest_version_label": "2026-03",
     "display": {
       "color": "#10b981",
-      "strength_detail": "精确指令遵循25.95为国内开源最高，全维度均衡发展无明显短板。API价格透明（输入2元/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
+      "strength_detail": "BenchLM综合67分（中国模型#12），精确指令遵循25.95为国内开源最高。BenchLM Agentic加权68.4%表现稳健。API价格透明（输入2元/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
     }
   },
   {
@@ -98,7 +98,7 @@
     "latest_version_label": "2026-03",
     "display": {
       "color": "#f59e0b",
-      "strength_detail": "数学推理84.03全场顶尖，256K超长上下文。BenchLM 70分，小米首款旗舰推理模型，专为Agent时代设计，上榜即引发关注。"
+      "strength_detail": "数学推理84.03全场顶尖，256K超长上下文。BenchLM 70分（估算），MiMo-V2-Flash版本BenchLM 67分（中国模型#13），AIME 2025达94.1%。小米首款旗舰推理模型，专为Agent时代设计。"
     }
   },
   {
@@ -132,7 +132,7 @@
     "latest_version_label": "2026-03",
     "display": {
       "color": "#d97706",
-      "strength_detail": "数学推理82.35表现出色，262K超长上下文为同级最大。开源MoE小杯版，资源消耗更低，BenchLM 70分，适合对算力有限制的私有化部署场景。"
+      "strength_detail": "BenchLM综合71分（中国模型#7），数学推理82.35表现出色，262K超长上下文为同级最大。开源MoE小杯版，资源消耗更低，适合对算力有限制的私有化部署场景。"
     }
   },
   {

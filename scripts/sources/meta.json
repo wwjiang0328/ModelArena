@@ -1,8 +1,8 @@
 {
-  "data_cutoff_date": "2026-04-07",
-  "page_generated_at": "2026-04-08T02:54:18.459Z",
-  "version": "2026.04.08",
-  "update_batch_id": "batch-20260408",
-  "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-07 的综合评测数据，更新 BenchLM 参考模型分数，新增 Qwen3.5-122B 模型，修正各模型 BenchLM 评分",
+  "data_cutoff_date": "2026-04-08",
+  "page_generated_at": "2026-04-09T02:03:37.249Z",
+  "version": "2026.04.09",
+  "update_batch_id": "batch-20260409",
+  "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-08 的综合评测数据。主要变更：(1) BenchLM 综合评分全面更新至 2026-04-08 最新数据；(2) 参考模型 Gemini 3.1 Pro 评分 86→85；(3) Qwen3.5 397B Reasoning 评分 78→77；(4) DeepSeek V3.2 Thinking 评分 68→67；(5) Qwen3.5-122B 评分 70→71；(6) 更新 benchmarks 编程/数学/智能体三个维度的详细数据",
   "model_count": 12
 }

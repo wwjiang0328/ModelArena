@@ -57,7 +57,7 @@
       "hallucination_control": 84.39,
       "instruction_following": 19.46,
       "superclue_total": 64.48,
-      "benchlm_score": 78,
+      "benchlm_score": 77,
       "arena_elo": null
     },
     "source_refs": {
@@ -105,7 +105,7 @@
       "hallucination_control": 77.23,
       "instruction_following": 25.95,
       "superclue_total": 61.92,
-      "benchlm_score": 68,
+      "benchlm_score": 67,
       "arena_elo": null
     },
     "source_refs": {
@@ -179,7 +179,7 @@
       "hallucination_control": 70.5,
       "instruction_following": 13.51,
       "superclue_total": 58.53,
-      "benchlm_score": 70,
+      "benchlm_score": 71,
       "arena_elo": null
     },
     "source_refs": {

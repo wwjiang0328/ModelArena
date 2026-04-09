@@ -1,0 +1,254 @@
+[
+  {
+    "model_id": "doubao-seed",
+    "short_name": "豆包 Seed 2.0",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "企业套餐/开发者平台",
+      "free_tier": true,
+      "has_subscription": true,
+      "enterprise_version": true,
+      "private_deployment": false,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://www.volcengine.com/product/doubao"
+    }
+  },
+  {
+    "model_id": "kimi-k25",
+    "short_name": "Kimi K2.5",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "开发者平台",
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": true,
+      "private_deployment": true,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://platform.moonshot.cn/docs/pricing"
+    }
+  },
+  {
+    "model_id": "qwen35",
+    "short_name": "通义千问 3.5",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "阿里云百炼平台",
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": true,
+      "private_deployment": true,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://bailian.console.aliyun.com/"
+    }
+  },
+  {
+    "model_id": "glm5",
+    "short_name": "GLM-5",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "企业套餐/开发者平台",
+      "free_tier": true,
+      "has_subscription": true,
+      "enterprise_version": true,
+      "private_deployment": true,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://open.bigmodel.cn/pricing"
+    }
+  },
+  {
+    "model_id": "deepseek-v32",
+    "short_name": "DeepSeek V3.2",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": 2,
+      "output_token_price": 8,
+      "cache_input_price": 0.5,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "无订阅制",
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": false,
+      "private_deployment": true,
+      "price_status": "public",
+      "price_effective_date": "2025-01-20",
+      "price_source_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
+    }
+  },
+  {
+    "model_id": "mimo-v2",
+    "short_name": "MiMo V2 Pro",
+    "pricing": {
+      "has_api": false,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "暂未开放API",
+      "subscription_mode": "暂无",
+      "free_tier": false,
+      "has_subscription": false,
+      "enterprise_version": false,
+      "private_deployment": false,
+      "price_status": "no_api_yet",
+      "price_effective_date": null,
+      "price_source_url": null
+    }
+  },
+  {
+    "model_id": "hy20",
+    "short_name": "混元 2.0",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "腾讯云企业套餐",
+      "free_tier": true,
+      "has_subscription": true,
+      "enterprise_version": true,
+      "private_deployment": true,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://cloud.tencent.com/product/hunyuan"
+    }
+  },
+  {
+    "model_id": "qwen35-122b",
+    "short_name": "通义千问 3.5 小杯",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "开源免费自部署",
+      "subscription_mode": null,
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": true,
+      "private_deployment": true,
+      "price_status": "open_source_free",
+      "price_effective_date": null,
+      "price_source_url": "https://huggingface.co/Qwen"
+    }
+  },
+  {
+    "model_id": "longcat",
+    "short_name": "LongCat",
+    "pricing": {
+      "has_api": false,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "开源自部署",
+      "subscription_mode": "无",
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": false,
+      "private_deployment": true,
+      "price_status": "open_source_free",
+      "price_effective_date": null,
+      "price_source_url": "https://github.com/meituan/LongCat"
+    }
+  },
+  {
+    "model_id": "step35",
+    "short_name": "Step 3.5",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "开发者平台",
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": false,
+      "private_deployment": true,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://platform.stepfun.com/"
+    }
+  },
+  {
+    "model_id": "minimax-m27",
+    "short_name": "MiniMax M2.7",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "开发者平台",
+      "free_tier": true,
+      "has_subscription": false,
+      "enterprise_version": true,
+      "private_deployment": false,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://platform.minimaxi.com/"
+    }
+  },
+  {
+    "model_id": "spark-x2",
+    "short_name": "星火 X2",
+    "pricing": {
+      "has_api": true,
+      "input_token_price": null,
+      "output_token_price": null,
+      "cache_input_price": null,
+      "currency": "CNY",
+      "pricing_unit": "per_1M_tokens",
+      "pricing_mode": "按量计费",
+      "subscription_mode": "讯飞开放平台套餐",
+      "free_tier": true,
+      "has_subscription": true,
+      "enterprise_version": true,
+      "private_deployment": true,
+      "price_status": "officially_not_public",
+      "price_effective_date": null,
+      "price_source_url": "https://www.xfyun.cn/doc/spark/Web.html"
+    }
+  }
+]
