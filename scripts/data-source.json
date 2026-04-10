@@ -1,10 +1,10 @@
 {
   "meta": {
-    "data_cutoff_date": "2026-04-08",
-    "page_generated_at": "2026-04-09T00:00:00+08:00",
-    "version": "2026.04.09",
-    "update_batch_id": "batch-20260409",
-    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-08 的综合评测数据。主要变更：(1) BenchLM 综合评分全面更新至 2026-04-08 最新数据；(2) 参考模型 Gemini 3.1 Pro 评分 86→85；(3) Qwen3.5 397B Reasoning 评分 78→77；(4) DeepSeek V3.2 Thinking 评分 68→67；(5) Qwen3.5-122B 评分 70→71；(6) 更新 benchmarks 编程/数学/智能体三个维度的详细数据"
+    "data_cutoff_date": "2026-04-10",
+    "page_generated_at": "2026-04-10T00:00:00+08:00",
+    "version": "2026.04.10",
+    "update_batch_id": "batch-20260410",
+    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-09 的综合评测数据。主要变更：(1) BenchLM 综合评分全面更新至 2026-04-09 最新数据；(2) 参考模型 Claude Opus 4.6 评分 84→92，Gemini 3.1 Pro 评分 85→94，GPT-5.4 评分 81→94；(3) Qwen3.5 397B Reasoning 评分 77→81；(4) Kimi K2.5 评分 76→79（Reasoning版本）；(5) GLM-5 评分 76→77；(6) DeepSeek V3.2 Thinking 评分 67→65；(7) MiMo-V2-Pro 评分 70→63（更新为 MiMo-V2-Flash 公开数据）；(8) Qwen3.5-122B 评分 71→68；(9) 更新 benchmarks 编程/数学/智能体三个维度的详细数据"
   },
   "sources": [
     {
@@ -23,8 +23,8 @@
       "source_id": "src-benchlm-202604",
       "name": "BenchLM.ai 全球大模型综合排行榜",
       "url": "https://benchlm.ai/best/overall",
-      "data_date": "2026-04-08",
-      "description": "BenchLM.ai 综合评分，覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均",
+      "data_date": "2026-04-09",
+      "description": "BenchLM.ai 综合评分（provisional leaderboard），覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均",
       "applicable_fields": [
         "capabilities"
       ],
@@ -131,15 +131,15 @@
         "hallucination_control": 77.61,
         "instruction_following": 16.22,
         "superclue_total": 64.6,
-        "benchlm_score": 76,
+        "benchlm_score": 79,
         "arena_elo": null
       },
       "pricing": {
         "has_api": true,
-        "input_token_price": null,
-        "output_token_price": null,
+        "input_token_price": 0.6,
+        "output_token_price": 2.8,
         "cache_input_price": null,
-        "currency": "CNY",
+        "currency": "USD",
         "pricing_unit": "per_1M_tokens",
         "pricing_mode": "按量计费",
         "subscription_mode": "开发者平台",
@@ -147,8 +147,8 @@
         "has_subscription": false,
         "enterprise_version": true,
         "private_deployment": true,
-        "price_status": "officially_not_public",
-        "price_effective_date": null,
+        "price_status": "public",
+        "price_effective_date": "2026-03-01",
         "price_source_url": "https://platform.moonshot.cn/docs/pricing"
       },
       "tags": [
@@ -164,7 +164,7 @@
         "开源自部署"
       ],
       "routing_profile": {
-        "cost_level": "unknown",
+        "cost_level": "low",
         "speed_level": "unknown",
         "quality_level": "high",
         "best_for": [
@@ -182,14 +182,16 @@
           "src-superclue-202603",
           "src-benchlm-202604"
         ],
-        "pricing": [],
+        "pricing": [
+          "src-benchlm-202604"
+        ],
         "basic_info": [
           "src-superclue-202603"
         ]
       },
       "display": {
         "color": "#8b5cf6",
-        "strength_detail": "BenchLM综合76分（中国模型#5），代码生成65.50为国内开源最高，SWE-bench Verified 76.8%，AIME 2025达96.1%为国产模型最高。智能体任务规划78.44仅次于豆包，开源模型中综合表现最均衡。"
+        "strength_detail": "BenchLM综合79分（Reasoning版本，中国模型#4），代码生成65.50为国内开源最高，SWE-bench Verified 76.8%，AIME 2025达96.1%为国产模型最高。智能体任务规划78.44仅次于豆包，开源模型中综合表现最均衡。"
       }
     },
     {
@@ -205,14 +207,14 @@
       "status": "active",
       "latest_version_label": "2026-03",
       "capabilities": {
-        "math_reasoning": 84.39,
+        "math_reasoning": 84.87,
         "code_generation": 51.04,
         "science_reasoning": 75.61,
         "agent": 71.52,
         "hallucination_control": 84.39,
         "instruction_following": 19.46,
         "superclue_total": 64.48,
-        "benchlm_score": 77,
+        "benchlm_score": 81,
         "arena_elo": null
       },
       "pricing": {
@@ -270,7 +272,7 @@
       },
       "display": {
         "color": "#f97316",
-        "strength_detail": "BenchLM综合77分（中国模型#3），幻觉控制84.39全场最高，数学推理84.39同样顶尖。BenchLM Agentic加权73.3%位列国产第二。开源MoE架构，128K超长上下文，开源生态最完善。"
+        "strength_detail": "BenchLM综合81分（Reasoning版本，中国模型#3），幻觉控制84.39全场最高，数学推理84.87同样顶尖。BenchLM Agentic加权77%位列国产第二。开源MoE架构，128K超长上下文，开源生态最完善。"
       }
     },
     {
@@ -293,7 +295,7 @@
         "hallucination_control": 86.85,
         "instruction_following": 24.86,
         "superclue_total": 64.27,
-        "benchlm_score": 76,
+        "benchlm_score": 77,
         "arena_elo": null
       },
       "pricing": {
@@ -351,7 +353,7 @@
       },
       "display": {
         "color": "#06b6d4",
-        "strength_detail": "BenchLM综合76分（中国模型#4），GLM-5(Reasoning)版本BenchLM 81分排名全球#8、国产第一！幻觉控制86.85全场最高，SWE-bench 77.8%，Terminal-Bench 56.2%。BenchLM Agentic加权72.4%，智能体领域国产开源标杆。"
+        "strength_detail": "BenchLM综合77分（中国模型#5），GLM-5(Reasoning)版本BenchLM 85分排名全球#9、国产第一！幻觉控制86.85全场最高，SWE-bench 77.8%，Terminal-Bench 56.2%。BenchLM Agentic加权72.6%，智能体领域国产开源标杆。GLM-5.1已发布（84分），生态持续进化。"
       }
     },
     {
@@ -374,7 +376,7 @@
         "hallucination_control": 77.23,
         "instruction_following": 25.95,
         "superclue_total": 61.92,
-        "benchlm_score": 67,
+        "benchlm_score": 65,
         "arena_elo": null
       },
       "pricing": {
@@ -435,30 +437,30 @@
       },
       "display": {
         "color": "#10b981",
-        "strength_detail": "BenchLM综合67分（中国模型#12），精确指令遵循25.95为国内开源最高。BenchLM Agentic加权68.4%表现稳健。API价格透明（输入2元/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
+        "strength_detail": "BenchLM综合65分（Thinking版本，中国模型#12），精确指令遵循25.95为国内开源最高。BenchLM Agentic加权68.7%表现稳健。API价格透明（输入2元/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
       }
     },
     {
       "model_id": "mimo-v2",
-      "model_name": "MiMo-V2-Pro",
-      "short_name": "MiMo V2 Pro",
+      "model_name": "MiMo-V2-Flash",
+      "short_name": "MiMo V2 Flash",
       "vendor_name": "小米集团",
       "vendor_name_en": "Xiaomi",
       "logo": "📱",
-      "open_source": false,
+      "open_source": true,
       "context_window": "256K",
       "model_type": "reasoning",
       "status": "active",
       "latest_version_label": "2026-03",
       "capabilities": {
-        "math_reasoning": 84.03,
-        "code_generation": 59.61,
-        "science_reasoning": 74.39,
-        "agent": 55.97,
-        "hallucination_control": 73.8,
-        "instruction_following": 16.22,
-        "superclue_total": 60.67,
-        "benchlm_score": 70,
+        "math_reasoning": 69.75,
+        "code_generation": 54.46,
+        "science_reasoning": 53.66,
+        "agent": 56.37,
+        "hallucination_control": 63.45,
+        "instruction_following": 2.16,
+        "superclue_total": 49.97,
+        "benchlm_score": 63,
         "arena_elo": null
       },
       "pricing": {
@@ -468,37 +470,39 @@
         "cache_input_price": null,
         "currency": "CNY",
         "pricing_unit": "per_1M_tokens",
-        "pricing_mode": "暂未开放API",
-        "subscription_mode": "暂无",
-        "free_tier": false,
+        "pricing_mode": "开源自部署",
+        "subscription_mode": "无",
+        "free_tier": true,
         "has_subscription": false,
         "enterprise_version": false,
-        "private_deployment": false,
-        "price_status": "no_api_yet",
+        "private_deployment": true,
+        "price_status": "open_source_free",
         "price_effective_date": null,
         "price_source_url": null
       },
       "tags": [
         "数学强劲",
         "长上下文",
-        "效率之星"
+        "开源可部署"
       ],
       "scenario_recommendations": [
         "数学推理",
-        "长文档处理"
+        "长文档处理",
+        "开源自部署"
       ],
       "routing_profile": {
-        "cost_level": "unknown",
-        "speed_level": "unknown",
-        "quality_level": "medium_high",
+        "cost_level": "free",
+        "speed_level": "fast",
+        "quality_level": "medium",
         "best_for": [
           "math",
-          "long_context"
+          "long_context",
+          "open_source"
         ],
         "avoid_for": [
           "production_api"
         ],
-        "stability_level": "unknown",
+        "stability_level": "medium",
         "recommended_for_production": false
       },
       "source_refs": {
@@ -513,7 +517,7 @@
       },
       "display": {
         "color": "#f59e0b",
-        "strength_detail": "数学推理84.03全场顶尖，256K超长上下文。BenchLM 70分（估算），MiMo-V2-Flash版本BenchLM 67分（中国模型#13），AIME 2025达94.1%。小米首款旗舰推理模型，专为Agent时代设计。"
+        "strength_detail": "BenchLM综合63分（中国模型#13），AIME 2025达94.1%表现亮眼，256K超长上下文。MiMo-V2-Flash为开源版本，数学推理能力突出。小米Agent时代的推理模型代表。"
       }
     },
     {
@@ -591,7 +595,7 @@
       },
       "display": {
         "color": "#0ea5e9",
-        "strength_detail": "各维度均衡发展，幻觉控制76.46与数学推理76.47旗鼓相当。科学推理70.73稳健，适合企业级稳定部署场景。"
+        "strength_detail": "各维度均衡发展，幻觉控制76.46与数学推理76.47旗鼓相当。科学推理70.73稳健，适合企业级稳定部署场景。BenchLM综合60分。"
       }
     },
     {
@@ -670,7 +674,7 @@
       },
       "display": {
         "color": "#f59e0b",
-        "strength_detail": "美团推出的开源推理模型，智能体任务规划67.94表现亮眼，数学推理77.31稳健。开源可部署，适合本地化场景。"
+        "strength_detail": "美团推出的开源推理模型，智能体任务规划67.94表现亮眼，数学推理77.31稳健。开源可部署，适合本地化场景。BenchLM综合58分。"
       }
     },
     {
@@ -751,7 +755,7 @@
       },
       "display": {
         "color": "#ec4899",
-        "strength_detail": "数学推理80.67在同分段中最高，科学推理68.29稳健。开源高性价比之选，阶跃星辰持续迭代中。"
+        "strength_detail": "数学推理80.67在同分段中最高，科学推理68.29稳健。BenchLM综合62分，开源高性价比之选，阶跃星辰持续迭代中。"
       }
     },
     {
@@ -828,7 +832,7 @@
       },
       "display": {
         "color": "#a855f7",
-        "strength_detail": "数学推理78.15表现突出，代码生成58.74稳健。BenchLM 57分，闭源部署灵活，适合对数学和编程有需求的业务场景。"
+        "strength_detail": "数学推理78.15表现突出，代码生成58.74稳健。BenchLM综合60分，闭源部署灵活，适合对数学和编程有需求的业务场景。"
       }
     },
     {
@@ -851,7 +855,7 @@
         "hallucination_control": 70.5,
         "instruction_following": 13.51,
         "superclue_total": 58.53,
-        "benchlm_score": 71,
+        "benchlm_score": 68,
         "arena_elo": null
       },
       "pricing": {
@@ -909,7 +913,7 @@
       },
       "display": {
         "color": "#d97706",
-        "strength_detail": "BenchLM综合71分（中国模型#7），数学推理82.35表现出色，262K超长上下文为同级最大。开源MoE小杯版，资源消耗更低，适合对算力有限制的私有化部署场景。"
+        "strength_detail": "BenchLM综合68分（中国模型#9），数学推理82.35表现出色，262K超长上下文为同级最大。开源MoE小杯版，资源消耗更低，适合对算力有限制的私有化部署场景。"
       }
     },
     {
@@ -991,7 +995,7 @@
       },
       "display": {
         "color": "#ef4444",
-        "strength_detail": "科学推理71.95在同分段中最高，数学推理78.15不俗。语音交互领域传统强者，适合教育和科研场景。"
+        "strength_detail": "科学推理71.95在同分段中最高，数学推理78.15不俗。语音交互领域传统强者，适合教育和科研场景。BenchLM综合50分。"
       }
     }
   ],
@@ -1039,7 +1043,7 @@
         "model_label": "Kimi K2.5",
         "aime": 96.1,
         "hmmt": 95.4,
-        "math500": 92.0
+        "math500": 97.8
       },
       {
         "model_id": "qwen35",
@@ -1057,8 +1061,8 @@
       },
       {
         "model_id": "mimo-v2",
-        "model_label": "MiMo V2 Pro",
-        "aime": 87.0,
+        "model_label": "MiMo V2 Flash",
+        "aime": 94.1,
         "hmmt": 76.0,
         "math500": 90.0
       },
@@ -1082,14 +1086,14 @@
         "model_id": "glm5",
         "model_label": "GLM-5",
         "terminal_bench": 56.2,
-        "browse_comp": 72.4,
+        "browse_comp": 72.6,
         "osworld": 74.0
       },
       {
         "model_id": "qwen35",
         "model_label": "通义千问 3.5",
         "terminal_bench": 50.0,
-        "browse_comp": 73.5,
+        "browse_comp": 77.0,
         "osworld": 70.0
       },
       {
@@ -1103,7 +1107,7 @@
         "model_id": "deepseek-v32",
         "model_label": "DeepSeek V3.2",
         "terminal_bench": 45.0,
-        "browse_comp": 68.6,
+        "browse_comp": 68.7,
         "osworld": 60.0
       }
     ]
@@ -1114,21 +1118,21 @@
       "model_name": "Claude Opus 4.6",
       "vendor_name": "Anthropic",
       "superclue_total": 77.02,
-      "benchlm_overall": 84
+      "benchlm_overall": 92
     },
     {
       "model_id": "gemini-31-pro",
       "model_name": "Gemini 3.1 Pro",
       "vendor_name": "Google",
       "superclue_total": 76.69,
-      "benchlm_overall": 85
+      "benchlm_overall": 94
     },
     {
       "model_id": "gpt54",
       "model_name": "GPT-5.4",
       "vendor_name": "OpenAI",
       "superclue_total": 72.48,
-      "benchlm_overall": 81
+      "benchlm_overall": 94
     }
   ],
   "history_refs": []
