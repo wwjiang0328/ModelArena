@@ -1,10 +1,10 @@
 {
   "meta": {
-    "data_cutoff_date": "2026-04-10",
-    "page_generated_at": "2026-04-10T00:00:00+08:00",
-    "version": "2026.04.10",
-    "update_batch_id": "batch-20260410",
-    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-09 的综合评测数据。主要变更：(1) BenchLM 综合评分全面更新至 2026-04-09 最新数据；(2) 参考模型 Claude Opus 4.6 评分 84→92，Gemini 3.1 Pro 评分 85→94，GPT-5.4 评分 81→94；(3) Qwen3.5 397B Reasoning 评分 77→81；(4) Kimi K2.5 评分 76→79（Reasoning版本）；(5) GLM-5 评分 76→77；(6) DeepSeek V3.2 Thinking 评分 67→65；(7) MiMo-V2-Pro 评分 70→63（更新为 MiMo-V2-Flash 公开数据）；(8) Qwen3.5-122B 评分 71→68；(9) 更新 benchmarks 编程/数学/智能体三个维度的详细数据"
+    "data_cutoff_date": "2026-04-13",
+    "page_generated_at": "2026-04-13T00:00:00+08:00",
+    "version": "2026.04.13",
+    "update_batch_id": "batch-20260413",
+    "notes": "本次数据基于 SuperCLUE 2026年3月榜单（发布日期 2026-03-30）和 BenchLM.ai 截止 2026-04-10 的综合评测数据。主要变更：(1) 新增 Qwen3.6 Plus（阿里巴巴4月2日发布，BenchLM 77分，国产最强编程模型）；(2) 新增 GLM-5.1（智谱AI 4月8日发布，BenchLM 84分，开源旗舰，SWE-bench Pro 58.4%）；(3) 新增 GLM-4.7（智谱AI，BenchLM 72分，SWE-bench Verified 73.8%）；(4) 参考模型新增 Claude Mythos Preview（BenchLM 99分，全球#1）；(5) GLM-5 Reasoning版本 BenchLM 85分（非Reasoning版本77分）；(6) 更新 benchmarks 编程/数学/智能体三个维度的详细数据"
   },
   "sources": [
     {
@@ -23,7 +23,7 @@
       "source_id": "src-benchlm-202604",
       "name": "BenchLM.ai 全球大模型综合排行榜",
       "url": "https://benchlm.ai/best/overall",
-      "data_date": "2026-04-09",
+      "data_date": "2026-04-10",
       "description": "BenchLM.ai 综合评分（provisional leaderboard），覆盖 Agentic(22%)、Coding(20%)、Reasoning(17%)、Knowledge(12%)、Multimodal(12%)、Multilingual(7%)、Instruction(5%)、Math(5%) 八大类别加权平均",
       "applicable_fields": [
         "capabilities"
@@ -125,12 +125,12 @@
       "latest_version_label": "2026-03",
       "capabilities": {
         "math_reasoning": 81.51,
-        "code_generation": 65.5,
+        "code_generation": 65.50,
         "science_reasoning": 68.29,
         "agent": 78.44,
         "hallucination_control": 77.61,
         "instruction_following": 16.22,
-        "superclue_total": 64.6,
+        "superclue_total": 64.60,
         "benchlm_score": 79,
         "arena_elo": null
       },
@@ -290,7 +290,7 @@
       "capabilities": {
         "math_reasoning": 73.95,
         "code_generation": 58.32,
-        "science_reasoning": 75.0,
+        "science_reasoning": 75.00,
         "agent": 66.64,
         "hallucination_control": 86.85,
         "instruction_following": 24.86,
@@ -353,7 +353,89 @@
       },
       "display": {
         "color": "#06b6d4",
-        "strength_detail": "BenchLM综合77分（中国模型#5），GLM-5(Reasoning)版本BenchLM 85分排名全球#9、国产第一！幻觉控制86.85全场最高，SWE-bench 77.8%，Terminal-Bench 56.2%。BenchLM Agentic加权72.6%，智能体领域国产开源标杆。GLM-5.1已发布（84分），生态持续进化。"
+        "strength_detail": "BenchLM综合77分（中国模型#5），GLM-5(Reasoning)版本BenchLM 85分排名全球#9、国产第一！幻觉控制86.85全场最高，SWE-bench Verified 77.8%，Terminal-Bench 56.2%。BenchLM Agentic加权72.6%，智能体领域国产开源标杆。GLM-5.1已发布（84分），生态持续进化。"
+      }
+    },
+    {
+      "model_id": "glm51",
+      "model_name": "GLM-5.1",
+      "short_name": "GLM-5.1",
+      "vendor_name": "智谱AI",
+      "vendor_name_en": "Zhipu AI",
+      "logo": "🧠",
+      "open_source": true,
+      "context_window": "203K",
+      "model_type": "reasoning",
+      "status": "active",
+      "latest_version_label": "2026-04",
+      "capabilities": {
+        "math_reasoning": null,
+        "code_generation": null,
+        "science_reasoning": null,
+        "agent": null,
+        "hallucination_control": null,
+        "instruction_following": null,
+        "superclue_total": null,
+        "benchlm_score": 84,
+        "arena_elo": null
+      },
+      "pricing": {
+        "has_api": true,
+        "input_token_price": 1.4,
+        "output_token_price": 4.4,
+        "cache_input_price": null,
+        "currency": "USD",
+        "pricing_unit": "per_1M_tokens",
+        "pricing_mode": "按量计费",
+        "subscription_mode": "开发者平台",
+        "free_tier": false,
+        "has_subscription": true,
+        "enterprise_version": true,
+        "private_deployment": true,
+        "price_status": "public",
+        "price_effective_date": "2026-04-08",
+        "price_source_url": "https://open.bigmodel.cn/pricing"
+      },
+      "tags": [
+        "开源旗舰",
+        "编程强者",
+        "长程任务",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "代码生成",
+        "长程任务执行",
+        "AI智能体",
+        "开源自部署"
+      ],
+      "routing_profile": {
+        "cost_level": "medium",
+        "speed_level": "unknown",
+        "quality_level": "high",
+        "best_for": [
+          "coding",
+          "agent",
+          "long_running_tasks",
+          "open_source"
+        ],
+        "avoid_for": [],
+        "stability_level": "high",
+        "recommended_for_production": true
+      },
+      "source_refs": {
+        "capabilities": [
+          "src-benchlm-202604"
+        ],
+        "pricing": [
+          "src-benchlm-202604"
+        ],
+        "basic_info": [
+          "src-benchlm-202604"
+        ]
+      },
+      "display": {
+        "color": "#0891b2",
+        "strength_detail": "BenchLM综合84分（全球#10，国产第二），智谱最新旗舰模型，4月8日发布并开源。SWE-bench Pro 58.4%实现国产模型首次超越，Terminal-Bench 2.0达63.5%。唯一达到8小时级持续工作的开源模型，203K上下文，全面对齐Claude Opus 4.6。"
       }
     },
     {
@@ -381,8 +463,8 @@
       },
       "pricing": {
         "has_api": true,
-        "input_token_price": 2.0,
-        "output_token_price": 8.0,
+        "input_token_price": 1.0,
+        "output_token_price": 2.0,
         "cache_input_price": 0.5,
         "currency": "CNY",
         "pricing_unit": "per_1M_tokens",
@@ -393,7 +475,7 @@
         "enterprise_version": false,
         "private_deployment": true,
         "price_status": "public",
-        "price_effective_date": "2025-01-20",
+        "price_effective_date": "2026-03-01",
         "price_source_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing"
       },
       "tags": [
@@ -437,7 +519,87 @@
       },
       "display": {
         "color": "#10b981",
-        "strength_detail": "BenchLM综合65分（Thinking版本，中国模型#12），精确指令遵循25.95为国内开源最高。BenchLM Agentic加权68.7%表现稳健。API价格透明（输入2元/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
+        "strength_detail": "BenchLM综合65分（Thinking版本，中国模型#12），精确指令遵循25.95为国内开源最高。BenchLM Agentic加权68.7%表现稳健。API价格极低（输入¥1.0/百万token），全球开发者生态最活跃，开源大模型的持续标杆。"
+      }
+    },
+    {
+      "model_id": "qwen36-plus",
+      "model_name": "Qwen3.6-Plus",
+      "short_name": "通义千问 3.6",
+      "vendor_name": "阿里巴巴",
+      "vendor_name_en": "Alibaba",
+      "logo": "☁️",
+      "open_source": false,
+      "context_window": "1M",
+      "model_type": "reasoning",
+      "status": "active",
+      "latest_version_label": "2026-04",
+      "capabilities": {
+        "math_reasoning": null,
+        "code_generation": null,
+        "science_reasoning": null,
+        "agent": null,
+        "hallucination_control": null,
+        "instruction_following": null,
+        "superclue_total": null,
+        "benchlm_score": 77,
+        "arena_elo": null
+      },
+      "pricing": {
+        "has_api": true,
+        "input_token_price": null,
+        "output_token_price": null,
+        "cache_input_price": null,
+        "currency": "CNY",
+        "pricing_unit": "per_1M_tokens",
+        "pricing_mode": "免费调用",
+        "subscription_mode": "阿里云百炼平台",
+        "free_tier": true,
+        "has_subscription": false,
+        "enterprise_version": true,
+        "private_deployment": false,
+        "price_status": "officially_not_public",
+        "price_effective_date": "2026-04-02",
+        "price_source_url": "https://bailian.console.aliyun.com/"
+      },
+      "tags": [
+        "编程之王",
+        "智能体",
+        "百万上下文",
+        "闭源"
+      ],
+      "scenario_recommendations": [
+        "代码生成",
+        "AI智能体",
+        "长文档处理",
+        "综合问答"
+      ],
+      "routing_profile": {
+        "cost_level": "free",
+        "speed_level": "unknown",
+        "quality_level": "high",
+        "best_for": [
+          "coding",
+          "agent",
+          "long_context",
+          "balanced"
+        ],
+        "avoid_for": [],
+        "stability_level": "high",
+        "recommended_for_production": true
+      },
+      "source_refs": {
+        "capabilities": [
+          "src-benchlm-202604"
+        ],
+        "pricing": [],
+        "basic_info": [
+          "src-benchlm-202604"
+        ]
+      },
+      "display": {
+        "color": "#ea580c",
+        "strength_detail": "BenchLM综合77分（中国模型#5并列），阿里4月2日发布的国产最强编程模型。BenchLM Coding加权80.9%，Terminal-Bench 2.0达61.6%，Agentic加权71.6%。1M超长上下文，闭源但通过百炼平台免费调用，编程和智能体能力实现突破。"
       }
     },
     {
@@ -517,7 +679,7 @@
       },
       "display": {
         "color": "#f59e0b",
-        "strength_detail": "BenchLM综合63分（中国模型#13），AIME 2025达94.1%表现亮眼，256K超长上下文。MiMo-V2-Flash为开源版本，数学推理能力突出。小米Agent时代的推理模型代表。"
+        "strength_detail": "BenchLM综合63分（中国模型#13），AIME 2025达94.1%表现亮眼，LiveCodeBench 73.4%，256K超长上下文。MiMo-V2-Flash为开源版本，数学推理能力突出。小米Agent时代的推理模型代表。"
       }
     },
     {
@@ -776,7 +938,7 @@
         "science_reasoning": 64.63,
         "agent": 59.68,
         "hallucination_control": 55.61,
-        "instruction_following": 17.3,
+        "instruction_following": 17.30,
         "superclue_total": 55.68,
         "benchlm_score": 60,
         "arena_elo": null
@@ -836,6 +998,86 @@
       }
     },
     {
+      "model_id": "glm47",
+      "model_name": "GLM-4.7",
+      "short_name": "GLM-4.7",
+      "vendor_name": "智谱AI",
+      "vendor_name_en": "Zhipu AI",
+      "logo": "🧠",
+      "open_source": true,
+      "context_window": "200K",
+      "model_type": "reasoning",
+      "status": "active",
+      "latest_version_label": "2026-03",
+      "capabilities": {
+        "math_reasoning": null,
+        "code_generation": null,
+        "science_reasoning": null,
+        "agent": null,
+        "hallucination_control": null,
+        "instruction_following": null,
+        "superclue_total": null,
+        "benchlm_score": 72,
+        "arena_elo": null
+      },
+      "pricing": {
+        "has_api": true,
+        "input_token_price": null,
+        "output_token_price": null,
+        "cache_input_price": null,
+        "currency": "CNY",
+        "pricing_unit": "per_1M_tokens",
+        "pricing_mode": "按量计费",
+        "subscription_mode": "开发者平台",
+        "free_tier": true,
+        "has_subscription": true,
+        "enterprise_version": true,
+        "private_deployment": true,
+        "price_status": "officially_not_public",
+        "price_effective_date": null,
+        "price_source_url": "https://open.bigmodel.cn/pricing"
+      },
+      "tags": [
+        "编程能力",
+        "数学推理",
+        "高性价比",
+        "开源可部署"
+      ],
+      "scenario_recommendations": [
+        "代码生成",
+        "数学推理",
+        "开源自部署",
+        "成本敏感场景"
+      ],
+      "routing_profile": {
+        "cost_level": "low",
+        "speed_level": "unknown",
+        "quality_level": "medium_high",
+        "best_for": [
+          "coding",
+          "math",
+          "open_source",
+          "cost_sensitive"
+        ],
+        "avoid_for": [],
+        "stability_level": "high",
+        "recommended_for_production": true
+      },
+      "source_refs": {
+        "capabilities": [
+          "src-benchlm-202604"
+        ],
+        "pricing": [],
+        "basic_info": [
+          "src-benchlm-202604"
+        ]
+      },
+      "display": {
+        "color": "#14b8a6",
+        "strength_detail": "BenchLM综合72分（中国模型#7），SWE-bench Verified 73.8%，LiveCodeBench 84.9%，AIME 2025达95.7%。智谱AI的高性价比推理模型，编程和数学能力突出，开源可部署。"
+      }
+    },
+    {
       "model_id": "qwen35-122b",
       "model_name": "Qwen3.5-122B-A10B-Thinking",
       "short_name": "通义千问 3.5 小杯",
@@ -852,7 +1094,7 @@
         "code_generation": 50.18,
         "science_reasoning": 69.51,
         "agent": 65.15,
-        "hallucination_control": 70.5,
+        "hallucination_control": 70.50,
         "instruction_following": 13.51,
         "superclue_total": 58.53,
         "benchlm_score": 68,
@@ -1002,6 +1244,13 @@
   "benchmarks": {
     "coding": [
       {
+        "model_id": "glm51",
+        "model_label": "GLM-5.1",
+        "swebench": 80.0,
+        "swebench_pro": 58.4,
+        "livecodebench": 85.0
+      },
+      {
         "model_id": "glm5",
         "model_label": "GLM-5",
         "swebench": 77.8,
@@ -1016,25 +1265,18 @@
         "livecodebench": 85.0
       },
       {
+        "model_id": "glm47",
+        "model_label": "GLM-4.7",
+        "swebench": 73.8,
+        "swebench_pro": 50.0,
+        "livecodebench": 84.9
+      },
+      {
         "model_id": "qwen35",
         "model_label": "通义千问 3.5",
         "swebench": 65.0,
         "swebench_pro": 48.0,
         "livecodebench": 78.0
-      },
-      {
-        "model_id": "deepseek-v32",
-        "model_label": "DeepSeek V3.2",
-        "swebench": 62.0,
-        "swebench_pro": 45.0,
-        "livecodebench": 72.0
-      },
-      {
-        "model_id": "step35",
-        "model_label": "Step 3.5 Flash",
-        "swebench": 58.0,
-        "swebench_pro": 42.0,
-        "livecodebench": 86.4
       }
     ],
     "math": [
@@ -1044,6 +1286,20 @@
         "aime": 96.1,
         "hmmt": 95.4,
         "math500": 97.8
+      },
+      {
+        "model_id": "glm47",
+        "model_label": "GLM-4.7",
+        "aime": 95.7,
+        "hmmt": 93.3,
+        "math500": 93.0
+      },
+      {
+        "model_id": "mimo-v2",
+        "model_label": "MiMo V2 Flash",
+        "aime": 94.1,
+        "hmmt": 76.0,
+        "math500": 90.0
       },
       {
         "model_id": "qwen35",
@@ -1057,21 +1313,7 @@
         "model_label": "GLM-5",
         "aime": 90.3,
         "hmmt": 93.3,
-        "math500": 90.0
-      },
-      {
-        "model_id": "mimo-v2",
-        "model_label": "MiMo V2 Flash",
-        "aime": 94.1,
-        "hmmt": 76.0,
-        "math500": 90.0
-      },
-      {
-        "model_id": "deepseek-v32",
-        "model_label": "DeepSeek V3.2",
-        "aime": 82.0,
-        "hmmt": 78.0,
-        "math500": 84.0
+        "math500": 93.3
       }
     ],
     "agent": [
@@ -1083,6 +1325,20 @@
         "osworld": 68.0
       },
       {
+        "model_id": "glm51",
+        "model_label": "GLM-5.1",
+        "terminal_bench": 63.5,
+        "browse_comp": 72.6,
+        "osworld": 74.0
+      },
+      {
+        "model_id": "qwen36-plus",
+        "model_label": "通义千问 3.6",
+        "terminal_bench": 61.6,
+        "browse_comp": 77.0,
+        "osworld": 70.0
+      },
+      {
         "model_id": "glm5",
         "model_label": "GLM-5",
         "terminal_bench": 56.2,
@@ -1090,29 +1346,22 @@
         "osworld": 74.0
       },
       {
-        "model_id": "qwen35",
-        "model_label": "通义千问 3.5",
-        "terminal_bench": 50.0,
-        "browse_comp": 77.0,
-        "osworld": 70.0
-      },
-      {
         "model_id": "kimi-k25",
         "model_label": "Kimi K2.5",
         "terminal_bench": 50.8,
         "browse_comp": 60.6,
         "osworld": 63.3
-      },
-      {
-        "model_id": "deepseek-v32",
-        "model_label": "DeepSeek V3.2",
-        "terminal_bench": 45.0,
-        "browse_comp": 68.7,
-        "osworld": 60.0
       }
     ]
   },
   "reference_models": [
+    {
+      "model_id": "claude-mythos",
+      "model_name": "Claude Mythos Preview",
+      "vendor_name": "Anthropic",
+      "superclue_total": null,
+      "benchlm_overall": 99
+    },
     {
       "model_id": "claude-opus-46",
       "model_name": "Claude Opus 4.6",
